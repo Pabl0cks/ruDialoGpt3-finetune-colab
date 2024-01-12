@@ -1,0 +1,131 @@
+|0|1|Oh wow I’m just realizing that we need to change this branch up a little bit<|im_end|>
+|0|1|There really isn’t anything to show off<|im_end|>
+|0|1|Maybe we need to change it so anyone can mint or something<|im_end|>
+|0|1|So then when you share the url someone can click in and mint one<|im_end|>
+|0|1|But that opens up some other questions<|im_end|>
+|0|2|I’ll have to think about it<|im_end|>
+|0|3|BUT , if you already turned it in, just move on to Challenge 1 🙂<|im_end|>
+|0|1|Good work keep going.<|im_end|>
+|0|1|Check out the pinned message for the next challenge!<|im_end|>
+|0|1|Go get ‘em!<|im_end|>
+|0|1|I have done research for hours still can't get a clue<|im_end|>
+|0|1|^ yeah we really need to rebuild challenge 0 so _anyone_ can mint<|im_end|>
+|0|2|you have my beautiful buffalo sir, take good care of it.<|im_end|>
+|0|1|It was so much fun, I'm going to the next one right now 🙂<|im_end|>
+|0|2|Hi guys<|im_end|>
+|0|2|I have a question, why is yarn install stuck at 2805/2806??<|im_end|>
+|0|1|I think that means something is up with your metamask<|im_end|>
+|0|1|Do we need to have mainet eth to register ?<|im_end|>
+|0|1|Nope it’s all signature based<|im_end|>
+|0|1|I am on rinkeby<|im_end|>
+|0|1|Okay trying...<|im_end|>
+|0|2|Will proceed with further challenges . Will try to submit at later point of time if I am able to . Thanks guys 🙃<|im_end|>
+|1|1|I’ll do some testing when I can as well.  We’re you able to connect your wallet at all on speedruneth?  Or is it just when you try to submit challenge 0 that the issue happens<|im_end|>
+|0|2|I am able to connect<|im_end|>
+|0|1|It sounds like it was a deploy issue. I think this issue is fixed now if you want to try.<|im_end|>
+|0|1|yeah<|im_end|>
+|0|1|But not able to register<|im_end|>
+|0|1|Trying<|im_end|>
+|0|1|Done<|im_end|>
+|0|1|Able to register<|im_end|>
+|0|1|Minted! Nice!<|im_end|>
+|0|2|Perf! The only reason we did rinkeby for this one is so you can see it in OpenSea (testiest.opensea). But Goerli is just fine!<|im_end|>
+|0|1|Sudo<|im_end|>
+|0|1|sudo npm install -g yarn<|im_end|>
+|0|2|Might do it<|im_end|>
+|0|1|What are you doin?<|im_end|>
+|0|2|Shouldn’t be running any hardhat commands directly right?<|im_end|>
+|0|2|Installing packages is tricky on scaffold eth you have to cd to the specific folder in packages and then yarn add<|im_end|>
+|0|2|oh okay. dont know how to do that. will read a bit. thanks<|im_end|>
+|0|2|What did you mean by this tho, it’s important that we find any speed bumps in the challenge. Is something not installed right?<|im_end|>
+|0|1|So it appears that nothing was installed so I had to go find things to get the node modules thing to work<|im_end|>
+|0|2|Make sure you do a ‘yarn install’ in the main dir<|im_end|>
+|0|3|Oh okay. Maybe I missed that. ? In all new tabs do you have to do all those same steps?<|im_end|>
+|1|2|After the yarn install, you can yarn chain in one window, yarn start in another, then yarn deploy in a third and you’re off and running.  Then just keep running yarn deploy in that same window after changes are made to the contract.<|im_end|>
+|1|1|Just make sure to keep those three terminals up and you’re good<|im_end|>
+|0|2|This stuff is pretty fresh. I’m not sure how fast the cultural expectation is for multilateral support. But as a US native who spent his 20s in a foreign country that touches Germany, a dose of patience seems a reasonable recommendation if you’re asking. We are working on the tech, lingual support has to be a secondary concern. Just keeping these libraries up and working together is like a work of wizardry.<|im_end|>
+|0|3|But love to you across the pond! My family roots are Dresden! Of course Germans are checking into this tech. I love it.<|im_end|>
+|0|2|Did you run yarn install inside the clients directory? I remember having to do that. It all just still barely works. It’ll get better.<|im_end|>
+|0|2|I'm not sure. What clients directory? This is all very new to me. I ran yarn install in the 'challenge-0-simple-nft' directory, is that what you mean?<|im_end|>
+|1|1|On Windows I have been having to remove cp build/index.html build/200.html from that line entirely.  Then the surge command works.<|im_end|>
+|1|1|In the /packages/react-app/package.json file<|im_end|>
+|0|1|✅<|im_end|>
+|0|1|✅<|im_end|>
+|0|1|thanks I will try that<|im_end|>
+|0|1|scaffold-eth*<|im_end|>
+|0|1|Really loving scaffold-eth!!!<|im_end|>
+|0|1|Same surge issues<|im_end|>
+|0|1|🔥🔥🔥<|im_end|>
+|0|1|For Windows users, I think that package.json file for react-app, should be changed to: . "surge": "copy build\\index.html build\\200.html && surge .\\build" line 95. . Otherwise, I had issues deploying to Surge<|im_end|>
+|0|1|I would say the best resources for devs to get started in web3!<|im_end|>
+|0|1|Good work, keep going. Challenge 1 is next!<|im_end|>
+|0|1|I love that Challenge 0 focuses on the framework and process: no coding required. I've been hosting labs at 1Hive and TEC, previously doing CryptoZombies. . We switched to the Scaffold-Eth challenges last week and it went so well! I'm encouraging everybody to do challenge 0, not just devs and hopeful devs.<|im_end|>
+|0|1|thanks! was able to get some from there<|im_end|>
+|0|3|I'm just finishing up with  challenge 1 and was trying to run the tests provided. Not sure if I'm missing something on the last test it's failing but seems to be checking balance of secondAccount after withdrawing but isn't the owner the one who call the stake function in the test so secondAccount never actually stakes? Should the secondAccount call the stake function instead of owner in the test?<|im_end|>
+|1|2|What is the test you are running?  The withdraw function should be using msg.sender for it's balance checks.   Is secondAccount here just a new burner wallet in a new window, or the smart contract that holds the eth?<|im_end|>
+|0|2|"Should redeploy Staker, stake, not get enough, and withdraw" from the provided challenge_1.js file<|im_end|>
+|0|2|I don't think so. The test is calling stakerContract.withdraw(secondAccount.address) and is checking that the balance of secondAccount.address increases by 0.001 ether. But I don't see where in the test the secondAccount.address  calls the stake function in the first place so the staked balance for that account should always be 0. The only time stake is called in the test is stakerContract.stake({value: ethers.utils.parseEther("0.001")}); but this is called by the owner.address by default right? I'm very new to this so definitely could be totally missing something but a bit confused on this one.<|im_end|>
+|0|2|the test passed if I change the stake call to stakerContract.connect(secondAccount).stake({value: ethers.utils.parseEther("0.001")})<|im_end|>
+|0|1|You should use the frontend to test your contract instead of the tests.<|im_end|>
+|0|1|You should run the tests at the end to make sure it worked<|im_end|>
+|0|1|But focus your time on debugging in the frontend.<|im_end|>
+|0|3|Try staking and see what errors you get<|im_end|>
+|0|1|Yea thought it was working as expected when debugging in the front end but I see what I did wrong now. I misunderstood how withdraw function was supposed to work. I had the withdraw(address payable _to) function look for balances[_to] instead of balances[msg.sender]<|im_end|>
+|1|3|Looking good!<|im_end|>
+|0|2|i didn't save my localhost:3000/pk#0x... url for logging into the burner wallet 😊 but I still see the wallet's secret phrase in the hardhat folder.  anyone know a way to get that back or login another way?<|im_end|>
+|0|1|or... do i have to load the hardhat seed phrases into metamask and connect that way?<|im_end|>
+|0|3|yes 😎<|im_end|>
+|0|2|0x157B97Bcc3cc214fb9D2df9Ad05c59BCf9C76f06<|im_end|>
+|0|1|Woot Woot<|im_end|>
+|0|1|Amazing!! Lets goooo to next<|im_end|>
+|0|1|Gm<|im_end|>
+|1|2|gm!<|im_end|>
+|0|1|Having an issue submitting challenge 0 URL. I am getting ‘Please provide valid URL’. Any hint? Thanks<|im_end|>
+|1|1|you may need to add the http:// or https:// ?<|im_end|>
+|0|2|Yes I am adding it but nothing. Thanks<|im_end|>
+|1|1|Dang.  Mind dropping here the two URLs you are trying to use? I can take a look<|im_end|>
+|1|1|You can DM if you want<|im_end|>
+|0|2|Here it is a screenshot<|im_end|>
+|1|1|Ahh, gotcha!  You need to search that on the rinkeby Etherscan page, then link that URL<|im_end|>
+|0|1|Got it<|im_end|>
+|0|1|Thanks it is the ether scan url<|im_end|>
+|1|1|Sweet!<|im_end|>
+|0|1|Great work! Keep going!<|im_end|>
+|0|1|If you copy your address on the top right you can paste it in the bottom left faucet for fines<|im_end|>
+|0|3|Funds**<|im_end|>
+|0|1|Fairly sure I didn't use the right account when I used faucet, so the funds are sitting in an account I cannot get to? so I need to wait for my 24 hours to expire. Is that a thing?<|im_end|>
+|0|2|Just redeploy everything<|im_end|>
+|0|2|So I did that, I still don't understand how to get the funds from faucet. "You have already claimed tokens today. Please try again in 24 hours."<|im_end|>
+|0|1|Good deal. Sorry man, I’m walking ETHDenver lost lol<|im_end|>
+|0|1|hi, I am new to blockchain and am having issues after installing yarn. anyone with similar issues on windows (i installed nodejs prior to installing yarn) . warning package-lock.json found. Your project contains lock files generated by tools other than Yarn. It is advised not to mix package managers in order to avoid resolution inconsistencies caused by unsynchronized lock files. To clear this warning, remove package-lock.json.<|im_end|>
+|0|1|Try ‘yarn run chain’<|im_end|>
+|0|2|Without quotes<|im_end|>
+|0|2|I finished 0 and then hit a wall on #1. . . If you’re the same checkout crypto zombies.  Helped me a ton.<|im_end|>
+|0|2|hi, it seems that yarn is not installed due to the following error.. 'yarn' is not recognized as an internal or external command,. operable program or batch file.<|im_end|>
+|0|2|i am not able to install using . npm install -g yarn either<|im_end|>
+|0|1|hi, i have managed to install yarn. thank you for your help!<|im_end|>
+|0|1|Npm install -g yarn<|im_end|>
+|1|1|Does the 'yarn install' process go without errors?<|im_end|>
+|1|2|You may have to 'Npm install -g yarn' after reinstalling node.js, but I don't remember exactly.  We can do that if yarn is still throwing errors .<|im_end|>
+|1|2|Maybe also try a 'yarn --version' after you get everything reloaded to make sure your yarn is installed and up to date.<|im_end|>
+|0|1|This just means that you have another chain running on your machine already like geth or you have already run yarn chain in another terminal<|im_end|>
+|0|2|(I haven’t followed everything here)<|im_end|>
+|0|1|But address in use is common and should be easy to fix, look for other chains running locally<|im_end|>
+|1|2|I believe they are Windows<|im_end|>
+|0|1|hi, I am running it on windows.<|im_end|>
+|0|2|Hi guys, anyone stuck on challenge 0, checkpoint 3 -  with regards to deployer address? . I can generate it fine, but the Front-end doesn't update with the new address, only the network changes to rinkeby.<|im_end|>
+|0|2|am i missing a step where i should be updating the deployer address in some script?<|im_end|>
+|1|2|The front end address and the deployer address are different.  Are you able to deploy to a testnet and mint?<|im_end|>
+|0|1|Hi guys，When I Click the MINT NFT button,Nothing has changed in the page,The console shows a undefined balance, readContracts is empty<|im_end|>
+|0|2|How can i fix?<|im_end|>
+|0|2|^ did you follow the instructions exactly? You might want to start over with a fresh clone and follow the directions exactly.<|im_end|>
+|0|2|howdy<|im_end|>
+|0|1|let me run through it from scratch and see if i run into the same snag<|im_end|>
+|1|1|What environment are you running in?<|im_end|>
+|0|1|im on arch linux lol<|im_end|>
+|1|1|I can run it alongside and test it in Windows<|im_end|>
+|0|1|no formal environment<|im_end|>
+|1|2|Gotcha<|im_end|>
+|0|1|That would be the best thing to start with, fresh clone in a fresh folder, follow those instructions exactly<|im_end|>
+|0|1|yep, will do<|im_end|>
+|0|1|give me 5<|im_end|>

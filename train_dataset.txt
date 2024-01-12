@@ -1,0 +1,1576 @@
+|0|1|it's weird because clearly localhost is running<|im_end|>
+|0|1|any suggestions?<|im_end|>
+|0|1|Are you using node v14 or node v17?<|im_end|>
+|0|1|let me check, which one should i use<|im_end|>
+|0|1|v17.6.0<|im_end|>
+|1|1|some folks are running into similar things with v17<|im_end|>
+|0|1|Npm use 14<|im_end|>
+|0|1|Will work<|im_end|>
+|0|1|If you have 14 installed ofc<|im_end|>
+|0|1|will need to get it<|im_end|>
+|0|1|does nvm work?<|im_end|>
+|0|1|wait its node via npm let me try<|im_end|>
+|0|2|14 runs yarn fine<|im_end|>
+|1|1|I'll try going to 17 from 16 on my install, see if I run into anything<|im_end|>
+|0|1|yep the breaking thing is 14<|im_end|>
+|0|1|sick, ty for the help<|im_end|>
+|1|1|From what I remember, should be fine on anything <17<|im_end|>
+|0|1|ok.i will go on.<|im_end|>
+|1|2|Is the new window also in the same Gitpod instance?<|im_end|>
+|0|1|I don't know why I can't download this package, even with VPN<|im_end|>
+|0|2|I am in China<|im_end|>
+|0|2|yarn hardhat will show hardhat not an internal or external command, nor a runnable program<|im_end|>
+|1|1|That with the fatal error in your yarn install makes me think something isn't installed correctly<|im_end|>
+|0|2|I think so, and gitPod will work<|im_end|>
+|1|1|Then cd to there and run the checkout again, then yarn install<|im_end|>
+|1|1|Welcome.  Jumping from the other thread, Nodev16 is solid to that isn't the problem.  Did you run yarn generate to create the deployer address?<|im_end|>
+|0|1|"yarn run generate" ? yes<|im_end|>
+|1|1|So where are you hitting the "tx is undefined" error?<|im_end|>
+|0|1|when clicking "mint nft"<|im_end|>
+|0|2|on firefox<|im_end|>
+|0|2|I got this on chrome "Transaction Error. Cannot read properties of undefined (reading 'gasPrice')" same issue<|im_end|>
+|0|2|I saw other people had this issue but I am not sure how they fixed it<|im_end|>
+|0|2|Also I came to this step with gitpod, If I try local , the grab funds button do not appear :(<|im_end|>
+|1|2|Maybe v16 isn't as solid as I thought.  Some noted they were using node v14 when they got it to work.<|im_end|>
+|0|2|This is what I see ,  where can I paste address ?<|im_end|>
+|1|2|It's definitely not there in the pic.  Should be a local faucet under the Eth and gas price.<|im_end|>
+|1|1|Is that local?  That looks good<|im_end|>
+|0|1|yes local<|im_end|>
+|0|1|should I change the node ?<|im_end|>
+|0|1|but there is no grab funds<|im_end|>
+|0|2|localprovider is undefined I think<|im_end|>
+|1|3|Did your yarn install go without error?  Maybe want to try a yarn install again just in case<|im_end|>
+|0|1|yarn install. yarn install v1.22.17. [1/4] 🔍  Resolving packages.... success Already up-to-date.. ✨  Done in 0.99s.<|im_end|>
+|0|2|localprovider is null<|im_end|>
+|1|1|I can reproduce this one my end, the original yarn install gave me a bunch of errors, and it shouldn't.  Checking into it<|im_end|>
+|0|2|🙏<|im_end|>
+|1|1|Think I got it fixed.  Can you delete your challenge-0-simple-nft folder, and redo the clone and git checkout stuff.<|im_end|>
+|0|1|works now thanks<|im_end|>
+|0|3|I have tried for two days, but the network is wrong. I don't know how to proceed<|im_end|>
+|0|1|Hey everyone :') Working on this challenge tonight, wish me luck!<|im_end|>
+|1|1|You got it!<|im_end|>
+|0|2|Ayeeee everything worked! This is the coolest thing<|im_end|>
+|0|1|anyone here have trouble locating the build folder?<|im_end|>
+|1|3|Is it \packages\react-app\build you're looking for?  Shouldn't need to worry about that in this challenge<|im_end|>
+|0|1|hey wendell aa, shouldn’t that be “rinkeby” if you are deploying your contract on rinkeby?<|im_end|>
+|0|2|i am also stuck at this checkpoint but due to a different problem<|im_end|>
+|0|2|after i add my api key in the package.json, the verify command is detecting two api keys! i don’t know from where the first api key is coming from 😕<|im_end|>
+|0|1|btw i am Avichal! 🙂 I just started with the speedrun challenges 👋<|im_end|>
+|0|1|Hey Avichal :)<|im_end|>
+|0|2|👋<|im_end|>
+|0|2|oh! i think i can verify now. but for some reason it is not using my api key! it is using a preexisting api key 😕<|im_end|>
+|0|2|Hmm yeah I got an api key off of etherscan, and cut out the one that was there, pasted in my personal, thanks Avi it worked…did you hit save? lol<|im_end|>
+|0|2|yeah, i did. idk why it keeps on using the old api key<|im_end|>
+|0|1|Yeah when I be getting stuck, I just delete the folder and start over, haven’t figured out how to fix tings<|im_end|>
+|0|3|oh maybe i should delete and restart lol<|im_end|>
+|0|1|One thing I do not understand about vs code is that, when starting the tutorial, if you are doing things in bash, you start your node using yarn chain, then you open another terminal change directories into the folder challenge-0-nft,  yarn start, but then realize your folder with the files are not in vs code… when you open the folder, it ends your terminal sessions, and I am under the assumption that it “kills your terminal session” I don’t understand why it does that, when you already changed directories into the folder… but then when you open it it kills it, I’m missing what the difference is there… maybe not a q for in here but, I have done it plenty of times now and it doesn’t make sense to me, and from what I read online, this is normal, is it correct to assume that you need to have your folder open in vs code, before running yarn chain, and running yarn start in a second terminal?<|im_end|>
+|0|3|You're opening up 3 separate terminals, right?<|im_end|>
+|0|3|Yes, I have completed this challenge, except for adding my wallet to Metamask… the terminal instructions are clear, but I don’t understand why vs code has to end my terminal session, to pull up the folder/files, when it comes time to edit them…. And when it does end the terminal session, does it “kill” them, or is yarn chain still running somewhere, that I can pull it back up… in the past I have just restarted the tutorial and opened the folder/files right away, and started fresh with 3 new terminals<|im_end|>
+|0|3|So I'm a noob too, So I could be wrong! . . BUT . . I believe that the terminal, yarn start/ yarn chain starts deploys the app and a blockchain to your local computer.  That is why you use the Rinkey Test Net to use a test network in 'the wild' that isn't hosted on your computer.  So once you use a yarn surge (to deploy your app to the rinkey test network) you are deploying it to somewhere on the internet. . . So once you get to checkpoint 6. you are no longer working with a applcation/chain that is local to your computer. (so the terminals are no longer needed for the rest of the challenge)<|im_end|>
+|0|1|Ah well I guess when I open the folder, the terminal sessions are still there, it must be necessary to start vs code in the right folder, because if your running terminals, entering a new folder, will require starting new terminals… and yes everything working, I’m just confused on how on why changing directories in terminal, to challenge-0-simple-nft… doesn’t bring up your folder… instead you have to open the folder in vs code, and cd into the directory once again, will maybe make more sense later…<|im_end|>
+|0|2|ah, have you worked with yarn before?<|im_end|>
+|0|3|and Matt I was kind of thinking the same thing but didn’t put together that surge was the deployment to rinkeby<|im_end|>
+|0|1|yarn is similar to npm or Gradle or ant or mvn... so it is a 'builder' if you're running a yarn command, it will look in the dir you're in so if your in /code/eth/speedrun-0 it will look at the config file in that dir for what to build<|im_end|>
+|0|2|package.json is the manifest file that basically controls the project.<|im_end|>
+|0|2|Naw I have not, I have started a couple different tutorials tho… and have done a tutorial with ganache, that is also a local chain and moved onto a live test network<|im_end|>
+|0|2|Interesting, thanks for the insights on that, makes a bit more sense<|im_end|>
+|0|2|so if you run yarn on /my/desktop/ and there is no package.json (and there shouldn't be either because you don't want to build a project off of your desktop) it will error.<|im_end|>
+|0|2|yarn is simple in nature... always think where is my package.json, am I in that dir?<|im_end|>
+|0|2|i am very close to completing challenge 0.Why am i getting this error.<|im_end|>
+|1|1|You will want to change "your_network"  to name of the network you're deploying to.  Usually that is the rinkeby test network.<|im_end|>
+|1|1|yarn verify —network rinkeby<|im_end|>
+|0|2|Hello, I submitted challenge0 and the feedback was that contract unverified on etherscan. . when I run verify —network rinkeby the output says "already verified: YourCollectible (0x7b757AA5aE38F300Ce283570cAa48b2EE130085A), skipping."  But it doesnt show up on etherscan still. any ideas?<|im_end|>
+|1|2|That is okay, grab that address and search it on Etherscan.  That will provide the URL needed for submission.<|im_end|>
+|0|1|when I search it on etherscan it doesnt have any transaction history  "there are no matching entries", I figured it would at least show the deployment of the contract<|im_end|>
+|0|1|I have gotten this error "Error HH108: Cannot connect to the network localhost.. Please make sure your node is running, and check your internet connection and networks config" can anyone help?<|im_end|>
+|1|1|Is your 'yarn chain' running?<|im_end|>
+|0|2|Hey what are you guys building<|im_end|>
+|0|2|I’m a web2 dev learning web3, anyone wanna team up 😁<|im_end|>
+|1|2|Yo!  Try out the first few challenges as they are a super good intro to web3, then the later challenges really up the collaboration!<|im_end|>
+|0|1|I have the same issue now. Mine started immediately i changed the network to rinkeby from localhost. Please is there any solution to this<|im_end|>
+|0|2|Challenge submitted successfully!<|im_end|>
+|0|1|Though, I'm also seeing that Opensea can't find my contract yet. I'll wait a bit longer. Instructions say it can take a "while" but not sure what exactly a while means.<|im_end|>
+|0|2|24 hours passed, same error<|im_end|>
+|0|1|As I understand instruction after listing your collection will appear not immediately on OpenSea<|im_end|>
+|0|1|Oh wow - that's quite a bit.<|im_end|>
+|0|1|Hmm yeah<|im_end|>
+|0|1|But we can't do listing)<|im_end|>
+|0|2|Strange, yeah<|im_end|>
+|0|1|Just going to move on with this one - maybe I'll ask on the other channel too<|im_end|>
+|0|1|Same, I will let you know if find something<|im_end|>
+|0|2|So there's something going on with my surge link, it's not loading up the frontend for the smart contract, but it deployed successfully from the CLI, anyone know why?<|im_end|>
+|0|1|I'm using next js for front-end. Just include the useProvider hook from scaffold-eth which import burner-provider and when i run yarn dev this above error occur<|im_end|>
+|0|1|add fs to package.json<|im_end|>
+|0|1|fs add but still got same error<|im_end|>
+|0|1|hmmm<|im_end|>
+|0|1|what hooks version are you using<|im_end|>
+|0|2|and why is this is the challenge 0 chat? lol<|im_end|>
+|0|2|Hello house!<|im_end|>
+|0|1|I am an issue with burner wallets .. I can't seem to open the localhost for the scaffold-eth UI on my incognito window<|im_end|>
+|0|2|Any fix available for this?<|im_end|>
+|1|1|Are you using gitpod?  That is the only place I've heard of an issue getting the incognito to load<|im_end|>
+|0|2|Yup! I'm using GitPod<|im_end|>
+|1|2|Dang, I haven't used Gitpod before.  Is there a way to open an incognito window that lives inside your Gitpod session?<|im_end|>
+|0|1|I wonder if we need to submit an issue to Gitpod to start handling this?<|im_end|>
+|0|1|I see this more and more<|im_end|>
+|0|2|IDK if they are open source or not<|im_end|>
+|1|1|Right?  I can't even get Gitpod to load correctly for me to test it<|im_end|>
+|0|2|good day everyone<|im_end|>
+|1|1|I use my PC's terminals, but you can also create them within your IDE if you want.<|im_end|>
+|1|2|Just make sure you 'cd' to the proper directory!<|im_end|>
+|0|1|I finally ended the process with my PC terminal then started on Vs code buh yarn start or deploy doesn't work<|im_end|>
+|1|1|is your yarn chain running?<|im_end|>
+|0|1|Yhh yarn chain is running perfectly<|im_end|>
+|1|1|Weird, any error showing up with yarn start?<|im_end|>
+|0|1|Yhh error command "start" not found<|im_end|>
+|1|2|Are you in the correct directory?<|im_end|>
+|1|2|I often forgot to 'cd challenge-0' and get that same message<|im_end|>
+|0|1|So I discovered when I cloned the git repository it didn't come with all the files it just has the readme<|im_end|>
+|1|1|yarn install ?<|im_end|>
+|0|1|How do I confirm I'm in the right directory<|im_end|>
+|1|1|Should show right in the cmd<|im_end|>
+|0|1|I've done this<|im_end|>
+|1|1|If you're on Windows:<|im_end|>
+|0|1|I'm using Vs code now<|im_end|>
+|0|2|I use Mac<|im_end|>
+|1|2|VSCode should open the terminal in the correct directory from the start if you have the project open, hrmm<|im_end|>
+|1|1|Maybe a good idea would be to delete the  challenge-0 folder and start from the beginning with the clone / checkout / install process<|im_end|>
+|1|1|When I need to "re do" a challenge, I just delete the folder then start again from the beginning.<|im_end|>
+|0|1|Ohh okay thanks<|im_end|>
+|0|1|Don't I need to end yarn chain?<|im_end|>
+|1|1|Yeah, close all terminals before you start again<|im_end|>
+|0|1|?<|im_end|>
+|0|1|Any specific code?<|im_end|>
+|1|1|No code, just close em<|im_end|>
+|1|1|It will end the process<|im_end|>
+|0|2|Anyone getting this message when trying the challenge?<|im_end|>
+|0|2|I got the same error. We’re you able to figure it out?<|im_end|>
+|0|1|Answer to this is in the Readme. Make sure to follow directions exactly<|im_end|>
+|0|1|How can I fix this?<|im_end|>
+|0|1|Good morning<|im_end|>
+|0|1|Good morning<|im_end|>
+|0|2|I've done the setup on another machine and having the same issue with the "MINT NFT" button not working. Has anyone else had this problem?<|im_end|>
+|1|2|I haven't heard of anyone having that issue.  I will try a fresh clone of the challenge to see if I get it as well.  What environment(s) did you test it in?<|im_end|>
+|0|1|Ubuntu 20.10 server and PopOS desktop<|im_end|>
+|0|1|22.10 rather<|im_end|>
+|0|2|21.10 rather<|im_end|>
+|1|2|You're not getting any errors during the yarn install / chain / start / deploy?<|im_end|>
+|0|2|Nope. And it's only the YourCollection page. The debug page works fine<|im_end|>
+|1|2|Even if it goes through on the debug tab, if the NFT doesn't show on the main tab I don't believe it minted correctly<|im_end|>
+|0|1|It doesn't show on the main page, bit it does show on the transfers<|im_end|>
+|1|2|You're navigating to your own local IP address instead of using localhost:3000?<|im_end|>
+|1|2|Gotcha, I mean that should work?  Never tried that<|im_end|>
+|1|2|You could try to do a gitpod as well, see if it works there.<|im_end|>
+|1|1|Seems like it is the environment, but I don't know what the exact problem is<|im_end|>
+|0|1|Hmmmmmm, cloud development isn't really my vibe<|im_end|>
+|1|1|I can agree with that<|im_end|>
+|1|1|But seeing if it works there might help track the problem<|im_end|>
+|0|1|Gonna try an older ubuntu desktop version first.<|im_end|>
+|1|1|A good plan, you were using server previously?<|im_end|>
+|0|2|Yip<|im_end|>
+|0|1|wasup nerds<|im_end|>
+|0|1|Open up the console and see if there are errors<|im_end|>
+|0|1|Okay I’ll check it out. Thank you<|im_end|>
+|0|1|Is there a telegram for each challenge?<|im_end|>
+|0|1|From my experience yes<|im_end|>
+|0|1|Thanks!!<|im_end|>
+|0|1|Hey fam, I'm a new dev working on the Eth speed run. Currently stuck at the end of Simple NFT, at the last checkpoint where I need to verify my contracts on etherscan. I keep getting this error:. . contract YourCollectible failed to submit : "NOTOK" : "Invalid API Key" [object Object]. . I'd apreciate any advice or thoughts!<|im_end|>
+|1|2|Welcome!<|im_end|>
+|1|1|Did you update the api-key in package.json to your own?<|im_end|>
+|0|1|Thanks! I did indeed update that<|im_end|>
+|0|1|I tried generating a new API and replacing it but no dice<|im_end|>
+|0|2|Yeah it’s not working for me<|im_end|>
+|0|1|Ooo that would explain it! I was on an ETH stack exchange thread and a poster mentioned that it took a while for the new API to generate despite being listed, so I wondered if there was just downtime<|im_end|>
+|0|2|I will check later today and report back, thanks!<|im_end|>
+|0|2|Oh another QQ- if I want to upload the NFTs to OpenSea, where to I access the contract address? Is it on the Debug Contracts page?<|im_end|>
+|0|1|Thanks a bunch<|im_end|>
+|0|1|🔥<|im_end|>
+|0|2|Seems like the testnets are back up<|im_end|>
+|0|1|Hi<|im_end|>
+|0|1|i have installed GIT, node and yarn<|im_end|>
+|1|1|Git.   If it's installed correctly you should be able to pull up a blank terminal and run it.<|im_end|>
+|0|2|thank you<|im_end|>
+|0|1|ive launched localhost:3000 but it gave an error<|im_end|>
+|0|2|do i ignore<|im_end|>
+|1|1|Can't ignore front end messages as then you can't see your localhost page.  Have you ran yarn deploy yet?<|im_end|>
+|1|1|Neat.  Not sure what the error means, are you able to mint and transfer when manually testing on localhost?<|im_end|>
+|0|2|ive just completed checkpoint 0<|im_end|>
+|0|2|so do i have to go on to other checkpoints to check on that<|im_end|>
+|1|1|If you followed checkpoint 0 exactly, then you might as well try going on to 1 to see if everything works.  I have a feeling that error is going to cause problems<|im_end|>
+|0|1|thanks will do<|im_end|>
+|0|1|if i exit the project halfway<|im_end|>
+|0|3|do i follow checkpoint 0 to resume?<|im_end|>
+|1|1|If you exit and close all terminals, you need to open three terminals back up in the project dir and run yarn chain, yarn start, and yarn deploy.  That will get your node running, start the front end, and deploy your contract again.<|im_end|>
+|0|2|hello, everyone, i just start to join the challenge<|im_end|>
+|0|2|Hey guys, what is Infura used for? It is the last step In this challenge, but I have no idea what it does.<|im_end|>
+|0|2|Infura is a “provider”. It is your connection to the blockchain.<|im_end|>
+|0|1|So what would happen, if we would skip the last step and didn’t connect Infura?<|im_end|>
+|0|2|That’s probably fine, skip to the next challenge<|im_end|>
+|0|1|I mean I’ve connected Infura, but I was just curious what would happen in a real world app without Infura connected. Transactions wouldn’t be possible?<|im_end|>
+|0|3|I am really grateful for your help by the way ❤️<|im_end|>
+|1|2|That's true.  Since people submit using a handful of different testnets we kept that vague, but it could use some more info.<|im_end|>
+|0|1|I get this error when I try and mint an NFT: . `Transaction Error. Cannot read properties of undefined (reading 'gasPrice').`. Any ideas?<|im_end|>
+|0|1|Check your Node version with node -v<|im_end|>
+|0|1|I has this error with node 17.0<|im_end|>
+|0|1|Had*<|im_end|>
+|0|1|Currently using v16.14.2<|im_end|>
+|0|2|The debug tab also does not show anything.<|im_end|>
+|0|2|Hi all, I am a rusty web2 dev and thought I'd speedrunethereum! (After being inspired by Austin in Amsterdam).<|im_end|>
+|0|2|Challenge 0, 'Mint NFT' step (at start)... I get "Transaction Error. Cannot read properties of undefined (reading 'gasPrice')". Any ideas or tips to debug? Thanks.<|im_end|>
+|0|1|You can search through this chat. I see that there were Couple possible solutions mentioned.<|im_end|>
+|0|1|Ok, thanks!<|im_end|>
+|0|1|I'm getting.          Should deploy YourCollectible:.      Error: insufficient funds for intrinsic transaction cost<|im_end|>
+|0|1|Even though I have $1600 in testnet eth<|im_end|>
+|0|1|maybe try 0x before the key<|im_end|>
+|0|1|it's an array without 0x<|im_end|>
+|0|2|👋hi<|im_end|>
+|0|1|I cannot connect using WalletConnect😅<|im_end|>
+|0|1|hmm.. so, you use wallectconnect and choose metamask?<|im_end|>
+|0|1|Yes<|im_end|>
+|0|1|on mobile phone with android chrome?<|im_end|>
+|0|1|Yes, but Brave<|im_end|>
+|1|1|You may just need to add the https when copy/pasting it in<|im_end|>
+|1|1|Looks like you got it figured out in the general chat, cool<|im_end|>
+|0|1|hello. i keep getting this error after i clone the challenge 0 github repo, what to do?<|im_end|>
+|0|2|heyyyy hello frens :)<|im_end|>
+|0|1|i don't know why it tooks me so long to come in here<|im_end|>
+|0|1|hi<|im_end|>
+|0|1|cool, welcome 🥳<|im_end|>
+|0|2|I'm new too, but everything is amazingly well explained and detailed on the assignments 🤩🤩🤩🤩🤩<|im_end|>
+|1|1|This challenge will walk you through setting up scaffold-eth and minting your own NFT<|im_end|>
+|0|2|It's too hard for me.<|im_end|>
+|0|1|hey guys, were you able to connect through MM?<|im_end|>
+|1|1|After deploying to a testnet?<|im_end|>
+|0|1|I mean the wallet on the actual speed run<|im_end|>
+|0|1|Website<|im_end|>
+|1|2|The only time I see that error is when my chain locks up.  I have to close all three terminals and rerun yarn chain, yarn start, and yarn deploy —reset<|im_end|>
+|0|1|that's the thing, it doesn't connect, it doesn't do anything, it gives an error on console as well<|im_end|>
+|0|2|doesn't that blocks me to finish something?<|im_end|>
+|1|2|You also might have better luck today. Some weird stuff was going on with MM yesterday, hopefully it clears up<|im_end|>
+|1|2|You have to hit enter again, or it gives you the option to "rename" the URL if you want.  I recommend typing in something of your own to avoid duplicates<|im_end|>
+|1|2|I am seeing similar for all submissions.  Currently looking into it, but feel free to submit now and they will be manually checked.<|im_end|>
+|1|1|GM to all the new builders!<|im_end|>
+|1|1|If you followed the tutorial exactly, this could be a problem in the local environment.  No code is required for either the front end or the contract on this challenge until you deploy to a testnet, it's more to introduce the scaffold-eth process.  Did the clone/checkout/ yarn install all go without error?<|im_end|>
+|0|1|Yes, I did<|im_end|>
+|0|1|That’s the problem<|im_end|>
+|0|2|I just couldn’t yarn start<|im_end|>
+|1|2|A couple things to test would be to just delete the challenge-0 local folder and start the process again, or try another environment if you have one available.  That would help track down what may be causing the error.<|im_end|>
+|1|1|Also, some folks run into issues with their version of node.  Could try to install 14 or 16 and see if that helps.<|im_end|>
+|1|2|I know 17 has been the most troublesome so far.<|im_end|>
+|0|1|I’ll try downgrading to node 14 or 16<|im_end|>
+|0|2|What do I do when this happens<|im_end|>
+|0|1|check the wallet and check the details for the error on the transaction on the scan<|im_end|>
+|0|2|usually is lack of faucet<|im_end|>
+|0|1|it wont change if the address is not connected or if both are connected. usually it needs to reload the page<|im_end|>
+|0|1|please look<|im_end|>
+|0|1|Try to delete node modules and reinstall your package<|im_end|>
+|0|1|If you haven't try that yet<|im_end|>
+|0|1|I have tried many times<|im_end|>
+|0|1|And check for the error maybe it gives more details<|im_end|>
+|0|1|OK,try now<|im_end|>
+|0|1|Maybe it's blocked in your country?<|im_end|>
+|0|1|It's possible<|im_end|>
+|0|1|Try through a vpn<|im_end|>
+|0|1|but i have through a vpn<|im_end|>
+|0|1|Uhu 🤔<|im_end|>
+|0|1|I am using trojan<|im_end|>
+|0|1|I never use infura<|im_end|>
+|0|1|Check their docs have you?<|im_end|>
+|0|1|If that's the correct url<|im_end|>
+|0|1|Or maybe some env are not correctly set<|im_end|>
+|0|1|Like app Id or else<|im_end|>
+|0|1|Try to put in try catch first though<|im_end|>
+|0|1|yes<|im_end|>
+|0|1|but The documentation doesn't mention it<|im_end|>
+|0|1|Where do I need to set it up?<|im_end|>
+|0|1|I mean usually infura require some env keys to work with<|im_end|>
+|0|1|Have you try Try and catch?<|im_end|>
+|0|1|do it now<|im_end|>
+|0|1|Do you need to check your code. That object is not defined<|im_end|>
+|0|2|Console log and check if it's coming empty<|im_end|>
+|0|1|I will need to leave but i think you are on the right path now<|im_end|>
+|0|1|Can you give me a screenshot of the env?<|im_end|>
+|0|2|thanks,brother<|im_end|>
+|0|1|I am not quite sure it's the case. Just guessing I am on mobile bro<|im_end|>
+|0|1|No prob<|im_end|>
+|1|2|I've seen this happen sometimes with different versions of Node.  Something to try is to install version 14 or 16 and clone the challenge again.<|im_end|>
+|0|2|Already using v16.14 and tried refetching the repo, still same :/<|im_end|>
+|1|2|We’ll rats.  I am guessing you already blew up the folder and tried cloning again?<|im_end|>
+|0|3|I am using 16.13.1 ... on macbook intel<|im_end|>
+|0|1|hi<|im_end|>
+|0|2|I recommend instal WSL2<|im_end|>
+|0|1|last step about the infura<|im_end|>
+|1|2|Because you just deployed to a testnet instead of localhost.  Now it's possible more people will be sending transactions.<|im_end|>
+|0|3|Thank you for answering. But it worked without my inputting infura… Is it still necessary to input the infura address?<|im_end|>
+|0|3|Hello everyone!<|im_end|>
+|0|2|I reached to Checkpoint 4: 🚢 Ship it! I am able to deploy the contract. Then I change const targetNetwork = NETWORKS.rinkeby; in App.jsx. But when I reload the page I see a random address. I don't see the one in Rinkeby<|im_end|>
+|0|1|In the previous step I used "yarn run generate" to get an address. Then I sent test ether<|im_end|>
+|0|2|Could you give any hint please?<|im_end|>
+|1|2|After you deploy to rinkeby, you will need to connect as your own account instead of a burner wallet<|im_end|>
+|0|1|ok sure, it makes sense. But following the tutorial I don't know how to do that<|im_end|>
+|1|2|That is a good point<|im_end|>
+|0|2|how do a force the address to be the one I've just generated?<|im_end|>
+|1|1|using 'yarn generate'?  That is just the deployer address.  You will want to connect using a wallet of your own<|im_end|>
+|1|1|You're connecting to your Surge page, right?<|im_end|>
+|0|2|I am stuck just there. I see the rinkeby network. but the address is another than the one generated by "yarn generate"<|im_end|>
+|1|2|That screenshot is just pointing out that it is Rinkeby instead of localhost.  Meaning the front end is pointing to the Rinkeby testnet.<|im_end|>
+|1|2|The deployer address is a backend thing used for deploying the contract, so you don't need to worry about it much, other than sending it a bit of rinkeby eth so it has enough gas to deploy<|im_end|>
+|0|2|ok that's good. But then it says "Ready to mint a batch of NFTs for reals? Use the MINT NFT button."<|im_end|>
+|1|1|Ahh, right.  So you're just before the surge steps.<|im_end|>
+|0|2|yes<|im_end|>
+|1|1|So go to your localhost in your browser, you should see rinkeby displayed instead of localhost<|im_end|>
+|1|1|Nice<|im_end|>
+|0|2|that's my localhost<|im_end|>
+|1|1|You will actually need to connect a wallet now.  A wallet that has some rinkeby eth<|im_end|>
+|0|1|ahh ok, you mean I need to connect metamask?<|im_end|>
+|1|2|Yeah, Metamask will work<|im_end|>
+|0|2|ok then, I got it now. The instructions are a bit confusing hehe<|im_end|>
+|0|2|the issue it's probably that I don't have experience with scaffold-eth.<|im_end|>
+|0|1|Now I was able to mint an nft in rinkeby 🙂<|im_end|>
+|1|2|Sweet!<|im_end|>
+|0|1|btw I've joined D_D recently. Ryan suggested me to do this challenge. Thank you for your help Zak!<|im_end|>
+|0|2|please another solution to fix this<|im_end|>
+|0|1|Please help me, I'm having problems with the "yarn install" statement, it gives me the following error: "/usr/bin/env: 'node': No such file or directory"<|im_end|>
+|0|1|Hey everyone. I get a transaction error, cannot reading properties of undefined gasPrice when click to Mint NFt. How to fix this can you help me. I have enough balance $1746<|im_end|>
+|0|1|is that a front end error, or a smart contact error?<|im_end|>
+|0|1|Are you connected to localhost? Or  testnet?<|im_end|>
+|0|1|Localhost<|im_end|>
+|0|1|Hey, I can't login to etherscan. Are there anyone with same problem ?<|im_end|>
+|1|2|Nope, working fine here.<|im_end|>
+|0|3|Stuck on Checkpoint 2: Minting. . Whenever I click on anything on the site (like the mint button), I get this error:. . “Unhandled Rejection (Error): could not detect network (event="noNetwork", code=NETWORK_ERROR, version=providers/5.4.1)”. . Anyone got any insight?<|im_end|>
+|0|1|And in general when I try to access localhost:3000 on my browser I get this notification: . . “Unhandled Rejection (Error): missing response (requestBody="{\"method\":\"eth_accounts\",\"params\":[],\"id\":42,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={}, url="http://localhost:8545", code=SERVER_ERROR, version=web/5.4.0)”<|im_end|>
+|0|1|Are you running yarn chain?<|im_end|>
+|0|1|hi guys im not with cs background.. its a silly question but how can i fix this 👀<|im_end|>
+|0|1|I get the same error.... How did you solve it?<|im_end|>
+|0|1|how to start<|im_end|>
+|0|2|very difficult<|im_end|>
+|0|1|Hey guys, any thoughts on this problem?<|im_end|>
+|0|2|It can be rinkeby but i would suggest you start using another testnet like kovan or ropsten<|im_end|>
+|0|2|Just because it’s gonna be deprecated soon. But still you can use it anyway if you want<|im_end|>
+|0|1|same on me<|im_end|>
+|0|2|Hey someone got some info on this one?<|im_end|>
+|1|1|yarn build isn't working for some reason, that error about the directory not existing.<|im_end|>
+|0|2|okay wait<|im_end|>
+|1|1|Or is that error during yarn surge.  Hrmm.  It can't seem to find the build<|im_end|>
+|0|1|ok working!<|im_end|>
+|1|1|Sweet!<|im_end|>
+|0|1|thank you!<|im_end|>
+|0|1|Running yarn verify —network your_network is not working for me<|im_end|>
+|0|1|I tried it with rinkeby and it worked quite well<|im_end|>
+|0|2|Any errors?<|im_end|>
+|0|1|GM<|im_end|>
+|0|1|Hey<|im_end|>
+|0|1|every<|im_end|>
+|0|1|Hey guys , i got stuck at Checkpoint 4 , can someone help me please ? :)<|im_end|>
+|0|1|This error is being presented when running the command yarn chain, help me please. Tks<|im_end|>
+|1|2|Did you run yarn install ?<|im_end|>
+|1|1|Make sure the changes are saved and try a yarn deploy  —reset.<|im_end|>
+|0|2|yes<|im_end|>
+|0|2|yo, my yarn surge or yarn s3 results in:  "Command failed with exit code 1.". Tried some stack overflow stuff but didnt help<|im_end|>
+|1|2|That error sure is vague.  Did ‘yarn build’ run without errors?<|im_end|>
+|0|2|Hi guys, I have just finished the challenge 0. and to submit it to the speedrunethereum site we need a verified etherscan contract URL... and how to get it?<|im_end|>
+|0|1|Uncaught (in promise) Error: call revert exception (method="getReserves()", errorArgs=null, errorName=null, errorSignature=null, reason=null, code=CALL_EXCEPTION, version=abi/5.4.0)<|im_end|>
+|0|1|any thoughts?<|im_end|>
+|1|1|Hrmm, TS or JS version?<|im_end|>
+|0|1|JS<|im_end|>
+|0|1|cool thanks dude<|im_end|>
+|1|2|All good here on localhost.<|im_end|>
+|1|1|We will get that cleaned up<|im_end|>
+|0|1|Aww gotcha, that makes much more sense<|im_end|>
+|0|1|you need to fork the challenge project to your account, then you can upload your code to your forked repo.<|im_end|>
+|0|2|thought it might have been metamask and a network issue but this is in an incognito windows<|im_end|>
+|1|1|Is there a positive balance on the burner wallet when you're getting this?<|im_end|>
+|0|2|yep<|im_end|>
+|1|2|Dang, that's always the easiest fix.  Any rhyme or reason to when you get the error?<|im_end|>
+|0|2|its kinda random let me poke around developer tools and see if I can pinpoint it<|im_end|>
+|0|1|I see a 204 no content to the scaffold-eth rpc endpoint but not sure its related<|im_end|>
+|0|1|whoops<|im_end|>
+|1|1|??<|im_end|>
+|0|3|I'm getting this:<|im_end|>
+|0|1|Transaction Error. [ethjs-query] while formatting outputs from RPC '{"value":{"code":-32603,"data":{"code":-32602,"message":"Trying to send a raw transaction with an invalid chainId. The expected chainId is 31337"}}}'<|im_end|>
+|0|2|hey guys, whenever I try to register it throws the error that the server is overloaded. Is there any way I can getaround this issue?<|im_end|>
+|1|1|Give it a try again after awhile.  It usually works after a bit.<|im_end|>
+|0|1|In Checkpoint 4, when I run the 'yarn deploy', i got this error<|im_end|>
+|1|1|Did the 'yarn install' go without error?  Also make sure that 'yarn chain' is running.  Could be something with gitpod as well, not 100% sure.<|im_end|>
+|0|1|anyone here have a trouble finding the dist folder after the yarn build operation?<|im_end|>
+|1|1|Your 'yarn surge' isn't finding it?<|im_end|>
+|0|1|Hey guys<|im_end|>
+|0|1|the man himself<|im_end|>
+|0|1|React<|im_end|>
+|0|1|Getting TypeError: ethers.getContract is not a function for checkpoint 3, is this a hardhat-ethers error?<|im_end|>
+|0|1|Hi, starting my first quest on speedrunethereum! Glad to be here<|im_end|>
+|1|2|Excellent!<|im_end|>
+|0|1|I only got to checkpoint 2. When I hit “mint” nothing happens. Anyone know why? Thanks a lot<|im_end|>
+|0|1|Hello, this is what I see when I click on Mint. I remember taking this challenge some months ago and this was not happening. Has something changed that might have broken the challenge?<|im_end|>
+|0|2|Any library updated for example<|im_end|>
+|0|1|I tried to run the local ipfs daemon to see if it was because of that but it's the same<|im_end|>
+|0|2|Also added my Infura ID<|im_end|>
+|1|1|Weird, I am seeing something similar but with a diff error message.<|im_end|>
+|0|2|Which one are you seeing?<|im_end|>
+|1|1|Had a different error a second ago, but now both the JS and TS versions are giving the same.  project id required.<|im_end|>
+|1|2|Trying to find out why<|im_end|>
+|0|1|Let me know if you find the root cause, I'm out of ideas already 🙂<|im_end|>
+|1|1|Looks to be an error with this line in app.jsx:<|im_end|>
+|1|2|await ipfs.add(JSON.stringify(json[count]));<|im_end|>
+|1|2|Yes, it looks like something changes with the Infura<|im_end|>
+|1|2|Started a new Infura project hoping that a project ID would be listed..  Not seeing it<|im_end|>
+|0|1|There is a new type of project (I think?) called IPFS in Infura when you create one, and there is a project ID there, but I also tried adding it and it didn't work. Maybe the expected parameter has changed<|im_end|>
+|0|2|yes David I tried the same as well : (<|im_end|>
+|0|1|somewhere in this object because it seems like the INFURA_ID constant is for mainnet and testnets<|im_end|>
+|0|2|Giving the ipfs docs a look will report back shortly<|im_end|>
+|1|2|Just got it to work using the a new IPFS Infura key, using the project ID and secret<|im_end|>
+|1|2|Obviously you'll need an IPFS Infura and your own ID and secret there<|im_end|>
+|1|1|Not a great solution going forward as an IPFS Infura ID requires a credit card.  Will have to figure out a better way.<|im_end|>
+|0|1|Hi there - is Infura down or something? I'm getting a project id required error<|im_end|>
+|0|2|any advice for using an alternate IPFS?<|im_end|>
+|1|1|Check up above for the short term code fix.  a PR is on the way to fix it longer term.<|im_end|>
+|0|1|ok thanks<|im_end|>
+|0|1|looks like Infura IS down.<|im_end|>
+|0|2|is projectId just random 'xxxx' ?<|im_end|>
+|0|1|ah nevermind, can we use other IPFS now that Infura is not working at all?<|im_end|>
+|0|1|oh its back up now....<|im_end|>
+|0|1|hmm im still getting the same error<|im_end|>
+|0|1|updated with the latest infura id/secret as abovwe<|im_end|>
+|0|2|*above<|im_end|>
+|0|1|i had the same issue, i cloned the JS branch but when i try to run the yarn start script i get this error<|im_end|>
+|0|1|I get these errors when i click the mint function<|im_end|>
+|0|1|Please can someone help me out<|im_end|>
+|0|1|^^ started from scratch, seems to be fixed.<|im_end|>
+|1|2|The Project id error can be fixed by cloning the project again.<|im_end|>
+|0|3|Hi everyone, I feel really stupid asking this, but I cant even mint the first test nft, according to the docs we are supposed to just open gitpod, get some funds and mint, but  i get an error in the app.jsx already, an unhandeled rejection, are we supposed to install sth, did I miss a step, cajse it seems like gitpod has everything set up already.<|im_end|>
+|0|1|Unhandled Rejection (HTTPError): 403 - Forbidden. ▶️ 4 stack frames were collapsed.. async mintItem. src/App.jsx:661.   658 | .   659 | const mintItem = async () => {.   660 |   // upload to ipfs. > 661 |   const uploaded = await ipfs.add(JSON.stringify(json[count]));.       | ^  662 |   setCount(count + 1);.   663 |   console.log("Uploaded Hash: ", uploaded);.   664 |   const result = tx(<|im_end|>
+|0|2|thats all there is to it<|im_end|>
+|0|2|Hey I having issues with. . “yarn surge”. . How do I go about this<|im_end|>
+|1|2|Could have been the Infura IPFS issue from a few days ago, have you pulled a fresh clone?<|im_end|>
+|1|1|"yarn surge" is all that is needed, what is the issue you're running into?<|im_end|>
+|0|1|I switched to my own enviroment and it worked fine<|im_end|>
+|1|1|Ah yes, if you're on Windows, there isn't a 'cp' command so you have to edit the package.json file.  Are you running the Javascript version on Windows?<|im_end|>
+|0|1|Yes<|im_end|>
+|1|1|Check this first<|im_end|>
+|0|1|Checkpoint 5: 📜 Contract Verification  - To verify the contract on rinkeby - Does one use the api key from etherscan or is there a rinkeby version to sign up to ?  Getting this error when running  "yarn verify --network rinkeby"<|im_end|>
+|1|2|Just try to verify again, it should work after a couple tries.<|im_end|>
+|1|1|You may get something like "Already verified" which is OK.  Search your address on etherscan and see if it is verified after that.<|im_end|>
+|0|1|configured the .env and some other config files with my infura/alchemy. have no clue atm<|im_end|>
+|0|2|will probably continue for now, without passing those tests.<|im_end|>
+|0|2|Maybe try to just run yarn deploy directly in the folder and not use the workspace command<|im_end|>
+|0|2|You first need to run yarn chain in a different terminal<|im_end|>
+|0|1|U cant deploy ur contract if u dont have local chain running in the backgroud<|im_end|>
+|1|2|Did your 'yarn build' run without error?<|im_end|>
+|0|2|yep I've got the chain and the front-end running in other terminals. I'm able to get faucet funds so I can see the chain is running<|im_end|>
+|0|1|ah, I've got latest node version installed rather than 1.16 - think that could be the cause?<|im_end|>
+|0|2|will try to downgrade it<|im_end|>
+|0|1|bit of a weird failure for that though, would have expected the yarn installs to blow up or something if it wasn't compatible<|im_end|>
+|1|3|Yes, that can cause some issues.<|im_end|>
+|0|2|Anyone else having problems with the receive function? How is ot supposed to work that stake gets excuted with the sent amount when the value of stake is set to always be 0.5eth, how can stake achieve to make both possible at once?<|im_end|>
+|0|2|downgrading has done the trick, cheers 🙂 I need to learn to read<|im_end|>
+|1|2|The stake button is set to .5 on the front end, but you can also stake other amounts in the debug tab, and the receive function allows the contract to receive eth.<|im_end|>
+|1|2|Then you can call stake in the receive function, and it will stake that Eth that was sent to the contract.<|im_end|>
+|1|2|Maybe check in App.jsx where it is calling stake and giving it value.  Maybe something isn't working there?<|im_end|>
+|0|2|How did u solve it though, cause normally i would pass an input parameter for the funtion as the value that gets used?<|im_end|>
+|0|3|Then I would need to add an input field on the webapp, but i  dont think thats the point of the challenge<|im_end|>
+|0|1|My yarn chain,yarn build and yarn surge shows error<|im_end|>
+|0|1|Does this mean My project is published?<|im_end|>
+|0|1|Hi, I have this problem when I try to run "yarn generate". Someone knows how to solve???<|im_end|>
+|0|1|It's the third checkpoint<|im_end|>
+|0|2|same issue<|im_end|>
+|1|2|Just pushed a commit that fixed this issue when minting,  Clone the repo again and it should work for oyu<|im_end|>
+|1|1|On the TS version, that is.  Was already working on JS<|im_end|>
+|0|1|if you pass 'yarn test', you should pass the challenge if you submit it anyway<|im_end|>
+|0|1|Are the video meetings recorded ?<|im_end|>
+|0|2|i am getting this error<|im_end|>
+|0|1|Transaction Error. Cannot read properties of undefined (reading 'gasPrice')<|im_end|>
+|0|1|even tried changing node version but it didn't worked<|im_end|>
+|0|1|around 291 usd<|im_end|>
+|1|1|Yeah, that's plenty<|im_end|>
+|1|2|I think 16 is the most solid version at the moment, is that were you were to start?<|im_end|>
+|0|2|yup tried thrice on 16 version then went to 14 but no luck<|im_end|>
+|1|1|In the past, this issue was either the node version or their environment.  A good next step is to re-clone the repo and try it with a fresh yarn install.<|im_end|>
+|0|1|alright going to give it a try<|im_end|>
+|0|1|I use 16.13.1<|im_end|>
+|0|1|console if thats of any use<|im_end|>
+|0|1|Anyone please ?<|im_end|>
+|0|1|Who are admins<|im_end|>
+|1|1|What meetings are you referring to?<|im_end|>
+|1|2|The Bow Tie Fridays?<|im_end|>
+|0|1|When I'm running "Yarn Deploy" It is showing this error<|im_end|>
+|0|1|Can anyone help me with this<|im_end|>
+|1|1|Deploying to localhost, or a testnet?<|im_end|>
+|0|2|rinkeby<|im_end|>
+|1|1|You have to fund the deployer wallet.  Run a 'yarn account' to see if it has any rinkeby, and it not you will need to send it some.<|im_end|>
+|0|1|Thanks for your response man.....<|im_end|>
+|1|1|Np<|im_end|>
+|0|2|Hey Zak*<|im_end|>
+|0|1|I'm not familiar with react, the challenge says to use a template but I can't find any on the challenge. Are we free to chose from the internet.<|im_end|>
+|0|2|I meant the lectures<|im_end|>
+|0|2|When I'm running Yarn Surge .... it is throwing this error<|im_end|>
+|1|2|The react is already in place, you don't have to worry about it.  The template is built into the challenge.<|im_end|>
+|1|2|It's because that surge URL is already taken.  You can manually edit the URL when running the command, or just keep trying until it finds a unique one.<|im_end|>
+|0|1|I can only fund my deployer address once per day.... So the previous funding is used for Yarn Deploy....... So how can I run this command<|im_end|>
+|0|1|This command is Yarn Test<|im_end|>
+|1|1|If your yarn tests were passing locally, you should be okay to submit after the yarn build and yarn surge.<|im_end|>
+|0|3|How can I test it locally<|im_end|>
+|1|2|You can run 'yarn test' at any time when your 'yarn chain' and 'yarn start' are running to run the tests on localhost, but that will show up more in the next challenge.  Are you just in need of some testnet eth?  DM me an address and I can send a little.<|im_end|>
+|0|1|Photo from Jassie<|im_end|>
+|0|1|Can anyone help me with this?<|im_end|>
+|0|1|Everytime I click on mont nft this show up<|im_end|>
+|0|1|*mint<|im_end|>
+|1|1|Are you on the TS or JS version?<|im_end|>
+|0|3|js version<|im_end|>
+|1|1|Checking on this now.  There was a fix last week but I see you have the latest version already. In the mean time,  you can try these:. Make sure node isn't version 17, if so, install node 16 . Close all terminals, relaunch, and rerun the chain, start, and deploy, refresh your localhost page and try minting again<|im_end|>
+|0|1|Okay<|im_end|>
+|0|1|okay, its node 16.17.0 version only<|im_end|>
+|1|1|Ahh cool,  16.17.0 worked?<|im_end|>
+|0|1|Nope<|im_end|>
+|0|1|Thanks Zak, Its working fine now.<|im_end|>
+|1|1|What finally did the trick?<|im_end|>
+|0|1|Ahh, nothing just removed everything and installed in different hard drive<|im_end|>
+|0|3|where will I find this?<|im_end|>
+|0|1|Hello everyone<|im_end|>
+|0|1|Hope you will help me<|im_end|>
+|0|1|I nedd to know how to solve  challenge 0<|im_end|>
+|0|1|what are the steps<|im_end|>
+|0|1|hello<|im_end|>
+|0|1|can anyone help please<|im_end|>
+|0|1|hello<|im_end|>
+|0|2|Okay, thanks<|im_end|>
+|0|1|what specifically should I reinstall?<|im_end|>
+|0|1|Everything actually<|im_end|>
+|0|1|That worked for me<|im_end|>
+|0|2|ok Ill try that<|im_end|>
+|0|1|ok finally got it to work thank you. in case anyone else runs into this issue: I did NOT use GitPod and instead downloaded Visual Studio Code and then followed all the steps<|im_end|>
+|0|3|can someone pls help me with this.<|im_end|>
+|1|1|That should be okay, do things work out if you proceed with the yarn chain, yarn deploy, and yarn start?. . If there are issues, it might be easiest to just delete your challenge-0-simple-NFT folder and start over with the clone, checkout, yarn install etc.<|im_end|>
+|0|1|👍<|im_end|>
+|1|2|Do you have your yarn chain and yarn start terminals active?<|im_end|>
+|0|2|yes i think so. I think these terminals load automatically in this gitpod workspace<|im_end|>
+|1|1|Sadly I'm not familiar with Gitpod.  Are the terminals and the web browser all located in the same instance?<|im_end|>
+|1|1|This looks like it's the master scaffold-eth branch, not the scaffold-eth-challenges challenge-0 branch.  Double check that you did the clone and checkout commands as per the instructions<|im_end|>
+|0|1|good advice. I tried it just now. went through all the instructions but I'm still not able to go to http://localhost:3000 and get a new burner wallet. BUT I am able to see a burner wallet within the gitpod workspace, which i think is enough to get me through this challenge?<|im_end|>
+|0|1|I am thinking this may be the issue on the ipfs upload<|im_end|>
+|0|1|ahh ok<|im_end|>
+|0|2|is there anything i can do?<|im_end|>
+|0|1|It's not a difficult change, just look at the files in the pr and I can help.<|im_end|>
+|0|1|you will need an infura project id for it<|im_end|>
+|0|1|i'm looking at what u just sent<|im_end|>
+|0|1|the App.jsx and mint.js files<|im_end|>
+|0|1|i see them<|im_end|>
+|0|1|what do i need to do<|im_end|>
+|0|1|make those changes in your files<|im_end|>
+|0|1|ok<|im_end|>
+|0|2|and get an infura project id and secret<|im_end|>
+|0|2|I am updating the challenge now.. so others don't have to do this... appreciate your patience<|im_end|>
+|0|2|omg, i super appreciate your help!! i can be patient all day I've been trying to figure this out on my own for an hour a day this week<|im_end|>
+|0|2|what does your host: "" say? looks like they are using the nifty ink gateway, this should work.<|im_end|>
+|0|1|just set up an infura account. Is this where I grab the secret?<|im_end|>
+|0|1|where do i grab project id?<|im_end|>
+|0|1|create a new ipfs project<|im_end|>
+|0|1|should say create new key<|im_end|>
+|0|1|yep did that<|im_end|>
+|0|1|click manage key<|im_end|>
+|0|1|yep<|im_end|>
+|0|3|the id and secret are in project summary<|im_end|>
+|0|1|i don't see project summary but I see API key secret in securtiy tab<|im_end|>
+|0|1|you shouldn't have to do all this for the challenge...<|im_end|>
+|0|1|did you update the code you pulled and when did you pull?<|im_end|>
+|0|1|got it!<|im_end|>
+|0|1|okay<|im_end|>
+|0|1|i had made a different thing in Infura<|im_end|>
+|0|1|lol they keep changing shit<|im_end|>
+|0|1|i can see project id and key secret now<|im_end|>
+|0|1|it looks the same as yours<|im_end|>
+|0|1|k<|im_end|>
+|0|2|plug that in and try minting again<|im_end|>
+|0|1|haven't updated the code yet, was working on the infura thing<|im_end|>
+|0|1|kk<|im_end|>
+|0|2|so you see this?<|im_end|>
+|0|1|you're talking about updates from mint.js and app.jsx?<|im_end|>
+|0|1|yeah<|im_end|>
+|0|2|I have not used gitpod yet and prolly should<|im_end|>
+|0|1|i'm a noob so it seemed like an easier way to start<|im_end|>
+|0|1|(gitpod)<|im_end|>
+|0|1|no worries<|im_end|>
+|0|2|we need it to work so this is good experience for both of us<|im_end|>
+|0|1|so i need to add that line to the mint.js file and fill in my project ID and secret in lines 9 and 10?<|im_end|>
+|0|1|I see the issue...<|im_end|>
+|0|1|swap these two in mint.js and try<|im_end|>
+|0|1|and leave App.jsx the way it was<|im_end|>
+|0|2|I want to see if the nifty ink pinner is working<|im_end|>
+|0|1|and now you know how to use your own ipfs gateway 🙂<|im_end|>
+|0|1|and put in my infura ipfs project id and secret into lines 10 and 11<|im_end|>
+|0|2|how can i check to see if that solved the issue?<|im_end|>
+|1|1|Back!    To test, you can just refresh the page and try to mint again.<|im_end|>
+|0|1|now i don't have a mint button 😱<|im_end|>
+|0|1|and i get this now<|im_end|>
+|0|1|oh wait. i think i missed something<|im_end|>
+|0|1|you dont need this<|im_end|>
+|0|1|k<|im_end|>
+|0|1|and playing some code catchup lol<|im_end|>
+|1|2|So it was the nifty pinner causing the issue?<|im_end|>
+|1|1|Dang.  It was working as is after we updated it to be nifty<|im_end|>
+|0|2|this here<|im_end|>
+|1|1|Just in App.jsx through, not sure if mint.js was updated, or needed to be<|im_end|>
+|0|1|right<|im_end|>
+|0|2|i only updated mint.js<|im_end|>
+|0|1|thinking I need to fire up a gitpod real quick, the nifty pinner should work when using the mint button<|im_end|>
+|0|2|the mint.js is a stand alone script<|im_end|>
+|0|1|yeah maybe that would help. I may have not made all the changes properly. maybe you could check it in a gitpod then share that workspace with me?<|im_end|>
+|1|1|Just did a new clone, all is working in my Windows environment.<|im_end|>
+|1|1|Now to see if I can try it in Gitpod<|im_end|>
+|0|2|I get this error on localhost<|im_end|>
+|1|1|Yeah, that's the ipfs error.  Are you running the nifty one or the old one?<|im_end|>
+|0|1|I have just pulled latest from repo<|im_end|>
+|1|1|wow, wth?<|im_end|>
+|0|1|nifty<|im_end|>
+|0|1|right<|im_end|>
+|1|1|Oh wow, Gitpod jumps right into it.<|im_end|>
+|0|1|where is the link to open a gitpod session<|im_end|>
+|1|1|Top of the speedrun<|im_end|>
+|1|2|Takes awhile to load<|im_end|>
+|1|1|It calls all the commands for you with no interaction.  Didn't realize that.<|im_end|>
+|0|1|loading it now<|im_end|>
+|1|1|Yup, forbidden error<|im_end|>
+|0|1|Yeah Austin said that box should be up and running and good to go<|im_end|>
+|0|1|The nify one<|im_end|>
+|1|2|I mean, it works for me locally, so it's there<|im_end|>
+|1|1|And folks have been passing challenge 0 since that update, so I'm stumped.<|im_end|>
+|0|1|Yeah some weird shit going on<|im_end|>
+|0|2|this actually makes me feel less crazy<|im_end|>
+|1|2|Got it to work using my own Infura projectID and secret, but still not using nifty<|im_end|>
+|0|2|Yeah we will have to figure out how to let people know what to do on gitpod<|im_end|>
+|1|1|Don't want people to have to go get their own Infura id and secret , hopefully we can get Nifty to work here<|im_end|>
+|0|1|I cannot find "Import an existing smart contract" option<|im_end|>
+|0|2|As specified in the challenge<|im_end|>
+|1|1|You've got node installed first?<|im_end|>
+|0|1|yes<|im_end|>
+|0|2|Node.js<|im_end|>
+|1|1|It's been awhile since I have had to install, but I think it's this command:. npm install -g yarn<|im_end|>
+|0|2|I get npm should be run outside of the Node.js...<|im_end|>
+|1|1|If you're on Windows, open a new cmd and run the command there.<|im_end|>
+|1|2|Not yet, but you can submit it and it will likely get accepted if you followed all the steps.<|im_end|>
+|0|1|Hey Zak, who can I get in touch with if I'm having issues with growic portal<|im_end|>
+|1|1|It’s good to go now<|im_end|>
+|1|2|Try a fresh clone<|im_end|>
+|1|1|That's an unusual question for this channel.  I will DM you on that<|im_end|>
+|0|1|hello<|im_end|>
+|0|2|Not sure<|im_end|>
+|0|2|If you are looking to build an nft marketplace I can recommend some tutorials but it won’t be as OpenSea lol<|im_end|>
+|0|3|I realized I dont have the option to import a smart contract on open sea, anyone else have this problem?<|im_end|>
+|0|2|Pls when I tried to deploy the contracts i got insufficient fund for intrinsic transaction cost<|im_end|>
+|1|1|That's a tough one to diagnose.  What node version is installed?  Version 17 has some issues, but version 16 is good.    If it's not that, you can try to delete the challenge 0 folder and start again from the git clone command.<|im_end|>
+|0|1|Am using 16<|im_end|>
+|1|1|That's good, shouldn't be that then<|im_end|>
+|1|2|Is your 'yarn chain' terminal up and running?  That is your hardhat node which it connects to<|im_end|>
+|0|1|nope, running it now I get an error as well:. Error HH604: Error running JSON-RPC server: error:0308010C:digital envelope routines::unsupported<|im_end|>
+|1|1|Did you do the clone, checkout, and yarn install?<|im_end|>
+|1|1|You should check if your node version is 17<|im_end|>
+|0|1|is there a specific version if 17 you recommend?<|im_end|>
+|1|1|None of them, 16 is recommended<|im_end|>
+|0|1|oh ok<|im_end|>
+|0|1|thank you!<|im_end|>
+|1|2|No problem.  It worked?<|im_end|>
+|0|1|yea, needed to use node version 16, mine likes to default to 18<|im_end|>
+|1|1|Oh, interesting that18 had errors as well.<|im_end|>
+|0|2|I still can't get yarn deploy to work though<|im_end|>
+|0|1|Hi<|im_end|>
+|1|1|Welcome all the new builders!  Ask questions here if you run into any.<|im_end|>
+|0|1|hello<|im_end|>
+|0|1|I figure out that it means to on right top page click on "connect"<|im_end|>
+|0|2|ahhh I was clicking on the WalletConnect option<|im_end|>
+|0|1|I should sign in on Portis, fortmatic, authereum or coinbase<|im_end|>
+|0|2|I think I've solved myself haha<|im_end|>
+|1|1|Nice!  I use Metamask usually but yeah, connect your wallet.<|im_end|>
+|0|2|metamask is not available on there<|im_end|>
+|1|1|Wha??  Have you deployed this to a surge page yet?  I want to check that out<|im_end|>
+|0|1|checkpoint 3 is already done<|im_end|>
+|0|2|then changed the network to goerli<|im_end|>
+|0|1|Hi everyone, any idea what I've done wrong?<|im_end|>
+|1|2|Could be your node version.  What version are you running?  16 is your best bet there.<|im_end|>
+|0|1|16.14.2. . I've been working through Patrick Collins course so everything has been working well. . . I'm going to try it on Windows instead of Ubuntu<|im_end|>
+|1|2|16 is solid.  Good idea<|im_end|>
+|0|2|ugh still didnt work. might just start a new environment becasuse I dont know what to do.<|im_end|>
+|1|1|That is a good next step, just delete the challenge-0 folder and start again.  Are you on the JS or TS version?<|im_end|>
+|0|2|JS<|im_end|>
+|1|1|You might try (in a new terminal) running 'yarn set version 1.22.17'<|im_end|>
+|0|2|why does yarn version chnage to version 3 ?<|im_end|>
+|1|2|Not sure what's going on there.  You will want to do the yarn set version command not in the challenge folder, but in the base folder.<|im_end|>
+|0|2|so the base folder version was still 1.22.19. I set it to 1.22.17<|im_end|>
+|0|1|went back to the challenge folder and the version was still 3.whatever<|im_end|>
+|1|1|Weird, give it a try and see<|im_end|>
+|0|1|chnaged it to version 1.22.17<|im_end|>
+|0|1|running yarn install now. looks better so far<|im_end|>
+|1|2|Good deal<|im_end|>
+|0|1|VICTORY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<|im_end|>
+|0|1|omg that was dumb and took so long<|im_end|>
+|1|1|haha,  nice work!<|im_end|>
+|0|1|thanks for your help Zak<|im_end|>
+|0|1|I am starting Challange 0<|im_end|>
+|0|2|Hi all,. Is it recommended to start challenges on a windows based machine or a unix one?<|im_end|>
+|0|2|I have heard installing packages and all is a smooth process on wsl<|im_end|>
+|1|1|Both should work.  I have done Windows and it worked pretty well.<|im_end|>
+|0|1|awesome<|im_end|>
+|0|2|ty!<|im_end|>
+|0|1|You would have easier time on linux, in terms of running scripts and similar, for example the command for verifying the smart contract on etherscan should be tweaked a bit if you are on windows<|im_end|>
+|0|1|Apart from that everything is the same<|im_end|>
+|0|2|got it , thanks!<|im_end|>
+|0|2|Hey everyone is it supposed to take some time when you’re submitting? It’s been like this for like 5 minutes<|im_end|>
+|1|1|No, it shouldn't.  Close out of that and see if it did submit.<|im_end|>
+|0|1|what is "yarn chain" command? someone help<|im_end|>
+|1|2|It starts the local hardhat node.<|im_end|>
+|0|1|holy crab, thank u very much<|im_end|>
+|0|1|sorry I can't read properly lol.  thanks mate<|im_end|>
+|1|1|Nice work!<|im_end|>
+|0|2|👀<|im_end|>
+|0|2|deployer account has 0.01 in goerli, but got INSUFFICIENT_FUNDS when deploying it<|im_end|>
+|1|1|I ran into that today as well, had to load it with about .06 to deploy<|im_end|>
+|0|2|Please I can't get pass this local host issue<|im_end|>
+|1|1|Are ‘yarn chain’ and ‘yarn start’ running in their own terminals?<|im_end|>
+|0|1|Yes<|im_end|>
+|0|1|I am using the gitpod terminal on their website<|im_end|>
+|0|2|I am also running it on windows<|im_end|>
+|1|1|Gotcha, are you also using the browser within Gitpod?  If you use a local broswer, it won't be able to connect to the Gitpod instance<|im_end|>
+|0|2|So how do I solve it<|im_end|>
+|1|1|In Gitpod, open an instance of the browser and then navigate to localhost.  If you use the browser within Gitpod itself, it will connect correctly.<|im_end|>
+|0|2|Hi I created my sh domain as you may see wit ss but I can't open on browser to mint nft? Where is the probem? Could you please help me?<|im_end|>
+|0|1|hardhat command can't work<|im_end|>
+|1|1|Did 'yarn install' complete?<|im_end|>
+|0|2|process 2 has some problem<|im_end|>
+|1|2|If the same thing is happening with all challenges, you might check the basic environment stuff like node version, yarn version.  Node 16 is still the most stable from my testing.<|im_end|>
+|0|2|Hi, how do I find my surge URL?<|im_end|>
+|0|1|Any condor network added ready repository for Decentralized Staking App?<|im_end|>
+|0|2|Is there a discord for SRE? or just the various telegram rooms<|im_end|>
+|1|1|There is a discord, but it is not nearly as active as the Telegram channels.<|im_end|>
+|0|1|thank you :) maybe cuz it isn’t linked from the main sre page I guess<|im_end|>
+|0|2|I should prob get telegram for desktop lol<|im_end|>
+|0|1|hey guys, do you know how to change the ipfs address of NFTs to my own images?<|im_end|>
+|0|1|In the ipfs tab<|im_end|>
+|0|1|Hi<|im_end|>
+|0|2|why did I always get "provide a valid URL" when I enter the right URL?<|im_end|>
+|1|1|That is not a valid etherscan URL.   Search that address on Goerli Etherscan to get the URL.<|im_end|>
+|0|1|my bad, I thought it was asking for contract address<|im_end|>
+|0|1|: ERROR: [Errno 2] No such file or directory: 'install'<|im_end|>
+|0|2|I have this error, please check thanks<|im_end|>
+|0|1|Hi I am doing the first challenge, I have minted 2 nfts but they don't appear on the web page. Any clues on how to fix this?<|im_end|>
+|1|1|On localhost?<|im_end|>
+|0|1|Its ok I didnt deploy the contract<|im_end|>
+|0|1|its working now<|im_end|>
+|1|1|Great!<|im_end|>
+|0|1|Hi at the final section of Challenge 1<|im_end|>
+|0|2|What is my network?<|im_end|>
+|0|1|Now you are ready to run the yarn verify --network your_network command to verify your contracts on etherscan<|im_end|>
+|0|1|Is it the IP address from surge?<|im_end|>
+|0|1|Hello, I'm having trouble finding an import and existing smart contract on opensea. Please, how do you go about that? thanks<|im_end|>
+|0|1|i tried this and it telling me already verified<|im_end|>
+|0|2|this is what i got no option to import existing smart contract<|im_end|>
+|1|2|It's alright if it says already verified, since this challenge doesn't require any code changes to the contract, Etherscan detects it as already being verified.<|im_end|>
+|0|2|Hi . Yarn build not working<|im_end|>
+|1|1|That's usually an incorrect directory.  Are you in the root of the challenge folder?<|im_end|>
+|0|1|Ohh snap<|im_end|>
+|0|1|Hi builders! I'm George from Georgia and I'm excited to be working on this challenge with all of you.<|im_end|>
+|1|1|Welcome!<|im_end|>
+|0|1|Thank you, Zak!<|im_end|>
+|0|2|and here I can see minted NFT<|im_end|>
+|0|1|did I miss something, or why is "Contract Source Code is not valid"?<|im_end|>
+|0|1|fixed<|im_end|>
+|0|2|Hi guys, quick question: How do I change the NFT IPFS data? I changed the name, description etc of "buffalo" in "mint.js" but my frontend (localhost) still displays the old data. Thank you :)<|im_end|>
+|1|1|~.057 Goerli in my tests.  Faucet should still give .1 Goerli, but let me know if you're short.<|im_end|>
+|0|2|sounds more than short haha<|im_end|>
+|0|1|hope they didn't change the amount of goerli minted per 24h<|im_end|>
+|1|2|If so, hit me with an address<|im_end|>
+|0|1|0x0dbdab7923c421dc4e1918b2ce8ac1150606fb52<|im_end|>
+|1|1|Sent<|im_end|>
+|0|1|Hey all, glad to be here!<|im_end|>
+|0|1|Hello world<|im_end|>
+|1|1|👋<|im_end|>
+|0|2|Lets Buidl first challenge<|im_end|>
+|0|1|i use windows 11, but terminal using WSL2, can work together?<|im_end|>
+|1|1|If it's setup correct, I would think so<|im_end|>
+|0|1|okey, lets try<|im_end|>
+|1|2|Challenges run fine in Linux so give it a go!<|im_end|>
+|1|1|And let me know how it goes!  I've been wanting to try that on Windows 10<|im_end|>
+|0|1|sure, i wll report here<|im_end|>
+|0|1|It's Work together<|im_end|>
+|1|1|Excellent!!<|im_end|>
+|0|1|now what is it? i need change a chain id?<|im_end|>
+|1|1|Just logout, you'll get a burner wallet<|im_end|>
+|0|2|oke<|im_end|>
+|0|1|always fail when build frontend. i think the problem is max-old-space size<|im_end|>
+|0|2|how to change it<|im_end|>
+|1|1|Are you calling yarn start from the root challenge directory? and After the yarn chain is up in another terminal?<|im_end|>
+|0|1|i'm forget about it. hehee<|im_end|>
+|0|1|same here<|im_end|>
+|0|1|i need close all terminal. now its works<|im_end|>
+|0|1|Done ✅<|im_end|>
+|0|2|hey guys<|im_end|>
+|0|1|ive completed everything up to yarn test after deploying on testnet<|im_end|>
+|0|1|but get this error<|im_end|>
+|0|1|how do i get a goerli api<|im_end|>
+|1|1|First check that you added your own etherscan API key.  And sometimes it takes a few minutes after creating a new key for it to work.<|im_end|>
+|0|1|worked<|im_end|>
+|0|1|lol<|im_end|>
+|0|1|i hadt saved my vs file<|im_end|>
+|0|1|hey everyone<|im_end|>
+|0|2|was wondering why I would be getting this error<|im_end|>
+|0|1|I tend to get this every so often while using yarn, and I only started following the steps on the challenge<|im_end|>
+|0|1|not sure where I am going wrong<|im_end|>
+|0|2|Have yarn installed globally<|im_end|>
+|1|2|Did you run 'yarn install' within the challenge folder after the clone/checkout?<|im_end|>
+|0|1|I did, I have run it each time and i still get this error. I was wondering if it was because I installed yarn incorrectly but uninstalled and reinstalled a few times and still get the errorr<|im_end|>
+|0|1|Could it be an issue with node?<|im_end|>
+|1|1|Possibly, what version are you on?  16 is recommended<|im_end|>
+|0|2|yea everytime I get to, yarn chain, i get the error again<|im_end|>
+|1|1|You could try a 'yarn clean', then 'yarn install' again but it sounds like the lock file didn't get correctly created in the install process.  You may have to delete the challenge folder and clone again<|im_end|>
+|0|1|I’ll give it a go<|im_end|>
+|0|2|Doing a bit of troubleshooting. The fun stufffff<|im_end|>
+|0|1|how how goerli eth is required to deploy challenge 0 contract?<|im_end|>
+|1|1|Last I tested it was something like .056<|im_end|>
+|0|1|drop an address here if you goerli<|im_end|>
+|0|2|faucets are running dry for me<|im_end|>
+|0|1|0x98c41750F292AC7730F50eA8e9f24dd0CfEd2957<|im_end|>
+|0|2|Goerli pls thx<|im_end|>
+|0|1|It took a whopping 0.136 ETH woah<|im_end|>
+|1|1|Is your hardhat node (yarn chain) running?<|im_end|>
+|0|2|thanks! where can i confirm it?<|im_end|>
+|1|1|Gitpod makes it a little confusing, but you should have a terminal up where the yarn chain command was executed.  This is what runs your local hardhat chain.<|im_end|>
+|1|1|Do you have multiple instances running?<|im_end|>
+|1|2|May want to close it all down and start it again<|im_end|>
+|0|1|I don't remember doing it, but I honestly not sure. In Gitpod, is reload-browser means it?<|im_end|>
+|0|1|So i think i made it muchhhh worse<|im_end|>
+|0|1|Lol<|im_end|>
+|0|2|Now node is not finding yarn<|im_end|>
+|1|1|Lol.  Might be time to uninstall node and yarn and install them again<|im_end|>
+|0|1|Are you using nvm?<|im_end|>
+|0|1|Installed from the node site so giving up on that<|im_end|>
+|0|1|Uninstalled the brew conflict<|im_end|>
+|0|1|Uninstalled after forcing npm<|im_end|>
+|0|1|Deleted some files<|im_end|>
+|0|2|What should I install first? Im uaing windows<|im_end|>
+|0|2|I FIGURED IT OUT<|im_end|>
+|0|1|was a .yarnrc.yml file hanging out where it wasn't supposed to<|im_end|>
+|0|1|and a couple other random node files too<|im_end|>
+|1|2|Glad you got it!<|im_end|>
+|0|1|yes now to deal with the gas error I am getting when trying to mint<|im_end|>
+|0|2|but progress is progress<|im_end|>
+|1|2|Where are you stuck?  Best way is to dig in and follow the directions closlel<|im_end|>
+|1|1|Did the 'yarn build' run without error?<|im_end|>
+|0|2|Yes, yarn build was successful with no errors<|im_end|>
+|1|1|Try navigating to the react-app folder, then run the surge command.  That has worked for some<|im_end|>
+|0|2|Let me do that<|im_end|>
+|1|1|Interesting, what error is yarn surge producing?<|im_end|>
+|1|2|Same error as above?<|im_end|>
+|1|1|Since windows doesn’t have the cp command<|im_end|>
+|0|2|I already added this to the package.json<|im_end|>
+|1|2|Is it saved?  Vscode is weird about that sometimes.<|im_end|>
+|0|2|I saved it. Let me edit it again and save it. Then run 'yarn surge'<|im_end|>
+|0|1|On project..... I thought its supposed to show me the path of the project. I cancelled it because I was not seeing the path<|im_end|>
+|0|2|Maybe I should restart my pc<|im_end|>
+|0|1|does it typically take a while for it to build when you run "yarn build"<|im_end|>
+|0|1|nvm!<|im_end|>
+|0|1|about to be doneneeeee<|im_end|>
+|0|1|badge 1 lets gooooo<|im_end|>
+|0|1|@zak ty! on to the next one<|im_end|>
+|0|2|Hey guys<|im_end|>
+|0|1|Having this issue, while clicking "mint nft". Does anybody knows how to solve that?<|im_end|>
+|0|1|Nevermind, solved that. The DNS was blocking calls.<|im_end|>
+|0|1|Can someone transfer GoerliETH to this address -> 0x82C1c522d065E97CC6A37bAdb9fD8a45f4FD5ce9. . Don't need much<|im_end|>
+|1|1|Sent!<|im_end|>
+|0|1|Thanks!!<|im_end|>
+|0|1|Got it<|im_end|>
+|0|3|Hi guys, does anyone working on the NFT auction challenge ?<|im_end|>
+|1|2|Run your yarn chain and yarn start again, then hit localhost.  Should be able to grab it from the debug tab<|im_end|>
+|0|2|I have done what you said and opened this tab. How do I know which is the address of the contract I deployed?<|im_end|>
+|1|1|Go to the debug tab, not the dev console.  Should be listed<|im_end|>
+|0|1|My bad. I'm there now<|im_end|>
+|1|1|Sweet!<|im_end|>
+|1|1|Glad you didn't have to redeploy<|im_end|>
+|0|1|Oooohh thank you. I was thinking that it's my nft(like your collectible). Now I get it, it's my smart contract<|im_end|>
+|0|2|Hi, how much goerli eth is necessary to deploy the contract? the faucet gave me 0.001, which was not enough<|im_end|>
+|0|2|got 0.05 from another faucet and still not enough<|im_end|>
+|0|2|Depends also on the challenge, some require more ETH than others when deploying<|im_end|>
+|0|2|17655171417 scammer<|im_end|>
+|0|1|I'm getting insufficient funds for intrinsic transaction when trying to deploy my collectibles<|im_end|>
+|0|2|Please any help will be sincerely appreciated<|im_end|>
+|1|2|Search that error in this channel, it's come up quite a bit.  Could be a handful of things.  Latest I've seen is not enough gas in the deployer account.<|im_end|>
+|0|1|Yeah that's the issue and the faucet gives only 0.2 goerli per day<|im_end|>
+|0|1|Mine is insufficient funds for intrinsic transaction cost<|im_end|>
+|0|2|hey guys 👋. I keep getting this "Wrong network" error here at Checkpoint 4<|im_end|>
+|0|2|I'm coding on vscode and already restarted the the terminal commands<|im_end|>
+|0|1|just checked if I had a typo somewhere. I found one place, but the error persist 🤔<|im_end|>
+|0|2|also, i'm using TS instead of JS<|im_end|>
+|0|2|I was using the burn wallet<|im_end|>
+|1|2|You will have to connect a wallet when on a testnet, can't use the burner there.<|im_end|>
+|0|1|When I ran yarn start, there was an error where it couldn’t find this file. When I looked, there was an extra .bak in the json file, and that was causing the error<|im_end|>
+|0|2|Yarn deploy isn’t working for me<|im_end|>
+|1|1|Looks like your hardhat chain (yarn chain) isn't running.<|im_end|>
+|0|3|What’re the instructions for that?<|im_end|>
+|1|2|They're at the beginning of the speedrun.  After you clone, checkout, and 'yarn install' you need to run 'yarn chain' in one terminal, 'yarn start' in another terminal, then you can run 'yarn deploy' in a third terminal.<|im_end|>
+|0|1|hello, i need help.. i need a founds in georli testnet, but i dont have a twitter account with 50 followers.. . anyone know other link for rechare founds??<|im_end|>
+|1|1|DM an address, I will send enough to deploy<|im_end|>
+|0|1|tyy bro<|im_end|>
+|0|1|yess bro thank, rescue my study sunday.<|im_end|>
+|1|1|No problem!<|im_end|>
+|0|1|Just resubmited challenge 0<|im_end|>
+|0|1|It wont let me pass a polygon mumbai contract address<|im_end|>
+|0|1|(Gas at 80 gwei in goerli)<|im_end|>
+|0|2|Oh re rejected :/<|im_end|>
+|1|2|Not sure that the grader accepts mumbai at the moment.  Did you get an error message?<|im_end|>
+|0|2|Yeah, it checks that the url begins with goerli.etherscan etc<|im_end|>
+|0|1|Ill just do the challenges and upload them all when gas is low on goerli<|im_end|>
+|0|2|hi. what does this mean? Transaction Error. Cannot read properties of undefined (reading 'gasPrice'). I don't have enough ETH?<|im_end|>
+|1|2|That's generally the issue with that error.  If you're deploying to a testnet, your deployer account needs enough of that testnet eth to pay the gas.<|im_end|>
+|0|2|any idea how much is enough? I've testnet eth on goerli. Is it still insufficient?<|im_end|>
+|1|1|It's usually around .07 when I deploy, but I have seen some others reporting higher<|im_end|>
+|1|2|Drop an address here if you're short<|im_end|>
+|0|2|0xfE0E4f77896Bf85da8eA0E02d57a5d72D1f27777<|im_end|>
+|0|1|I've 0.48 eth though. I don't know why it doesn't work<|im_end|>
+|1|2|Oh yeah that's way more than enough.<|im_end|>
+|1|1|Wanna screenshot where the error is happening and any other relevant messages?  Shouldn't be gas if you have that much in the deployer account<|im_end|>
+|0|1|mint nft<|im_end|>
+|0|2|when i click Mint NFT, I get this error<|im_end|>
+|1|1|Ohh, did you grab some funds from the faucet for your front end address?  Front end has to cover gas when minting there<|im_end|>
+|0|2|yes, I think I did<|im_end|>
+|1|2|Ahh okay.  Just to check, you have deployed the contract to Goerli as well?  It looks like your front end is pointing there but just need to be sure.<|im_end|>
+|0|2|yes, i've deployed to Goerli. to be clear, I'm now at Checkpoint 4: 🚢 Ship it!. This is where I'm getting error<|im_end|>
+|1|2|Ahh cool, have you got to the yarn build and yarn surge?  If you post the site I can try minting as well<|im_end|>
+|0|3|not yet. since i cannot mint nft at this moment, i can't get to building my frontend. i'm stuck ( how can i post my site?<|im_end|>
+|1|1|You will have to have gotten to the surge part to have a site to post so let's step back.  You've updated the targetNetwork in the app.jsx to goerli, then hit localhost and connected a Metamask wallet then tried to mint<|im_end|>
+|0|1|yes, i did everything as you've written here<|im_end|>
+|0|3|my page<|im_end|>
+|1|2|That's failing because it's trying to test on localhost, but your yarn chain isn't running.  Can you share the Surge URL?  I can try to mint one there and watch the browser console<|im_end|>
+|1|2|If you do also want to test it on goerli, you can run yarn test --network goerli<|im_end|>
+|1|2|Same.  But I am getting a different, weirder, error.  No idea what it means<|im_end|>
+|1|1|Did the minting work when you were still deploying to localhost?<|im_end|>
+|1|1|In manual testing<|im_end|>
+|0|2|yes, it did<|im_end|>
+|1|1|Do you happen to have the contract address?  It isn't actually loading the contract on the surge site<|im_end|>
+|0|3|no, how can i get it?<|im_end|>
+|1|1|It is displayed in the command line when you deploy.  If you do a 'yarn deploy' again, it should re-use the same contract and have the same address.  But make sure you've updated the defaultNetwork in the packages/hardhat/hardhat.config.js file to goerli, otherwise it will just deploy to localhost.<|im_end|>
+|1|1|So after double checking your defaultNetwork in the hardhat config, you will need to fund that deployer address with some goerli.  I just ran a test and it used more than I thought... just under .2 goerli to deploy right now<|im_end|>
+|0|1|i got 0.2 eth now<|im_end|>
+|0|1|now i should deploy?<|im_end|>
+|1|1|Sure!<|im_end|>
+|0|1|my default network should be goerli right?<|im_end|>
+|1|2|Correct<|im_end|>
+|1|1|This is what actually deploys it to the goerli chain.  I think you were still deploying to localhost before<|im_end|>
+|0|2|what does it mean?<|im_end|>
+|1|2|Means you're deployed at that address, can you paste it in here?<|im_end|>
+|0|1|0x80e5BFa1f9428AFCA700DC1a5e28353880129bc5<|im_end|>
+|1|1|At this point, you should be able to go to localhost again, then connect a Metamask wallet that has some goerli eth and mint.  May have to refresh localhost a couple times<|im_end|>
+|0|2|this is what localhost shows now<|im_end|>
+|1|2|No idea on that.   Maybe close all terminals.  Reopen one and navigate to your challenge 0 folder and do a yarn start<|im_end|>
+|1|1|Should start up the front end, which is pointing to your contract on goerli<|im_end|>
+|0|1|Hi Zak. I could solve the problem by closing all terminals, thank you! Now I'm getting an error when I run yarn verify.<|im_end|>
+|0|2|is it the network problem again?<|im_end|>
+|1|1|You have to update your_network to the network you are verifying on, so goerli<|im_end|>
+|0|2|thank you, Zac! it seems I submitted successfully finally<|im_end|>
+|1|1|Excellent!  Now that you've got the process down, the next challenges will be more focused on the Solidity<|im_end|>
+|0|2|when i connect my wallet i get this hint but still doesn't work :/<|im_end|>
+|0|2|still getting this error<|im_end|>
+|1|1|Most common cause of that error when on localhost is the burner wallet doesn't have any funds, or the node (yarn chain) isn't running in another terminal<|im_end|>
+|0|1|figured it out, thanks!<|im_end|>
+|0|1|Stuck on Checkpoint 4...I'm having trouble getting my generated address to get loaded in my react app. I have the mnemonic created in /packages/hardhard/ and I've gone so far as to hardcode localDeployerMnemonic = "etc" in hardhard.config.js but I cannot get my generated wallet linked. I'm using the Goerli network but it's showing a different wallet address<|im_end|>
+|0|1|This is all I see but...<|im_end|>
+|0|1|Started all over again - please have fun and send me your NFTs to 0x810a44040c66446C394b9dC09E80394C03ab90d2<|im_end|>
+|1|1|You may just need to hit enter<|im_end|>
+|0|1|Haha always trips me up too<|im_end|>
+|0|1|oh...i feel pretty dumb. thank you<|im_end|>
+|0|2|😂<|im_end|>
+|0|1|Hi everyone<|im_end|>
+|1|2|Hey hey!<|im_end|>
+|0|2|I'm at checkpoint one, it says navigate to localhost:3000 in incognito but I don's see a wallet address<|im_end|>
+|1|1|Interesting, is the rest of the page there?  Like the mint button?<|im_end|>
+|1|1|Did it load correctly in a non-incognito window?<|im_end|>
+|0|2|Yes it's there<|im_end|>
+|1|2|Sure enough.  Did all previous steps go without error?  The yarn install, chain, start, and deploy?<|im_end|>
+|1|2|Yuck, couple quick things to try:. . Different browser. Close all terminals, then relaunch them and yarn chain, start, and deploy --reset again<|im_end|>
+|1|2|If that fails, can try to just delete the challenge folder and try the clone/checkout again just to narrow it down<|im_end|>
+|0|2|just to be sure I'm supposed to see the wallet address without connecting metamask, correct?<|im_end|>
+|1|1|Correct, it should be giving you a burner wallet to use for testing<|im_end|>
+|1|1|Then the incognito should give you a different burner wallet<|im_end|>
+|0|2|Ok I will try re-cloning<|im_end|>
+|0|2|I deleted and started from scratch and I still don't see a wallet address . I tried on firefox and chrome<|im_end|>
+|1|1|Can you check your node version?  16 is the most stable right now.  . . I think the command is node --version<|im_end|>
+|0|2|I'm using v16.17.0<|im_end|>
+|0|3|try 16.13.1 for the heck of it, been my tried and true version to go to<|im_end|>
+|1|1|That *should* be good, I am going to pull a clone and see if I get the same issue.  I'm running Windows 10, node 16.17.0, yarn 1.22.19<|im_end|>
+|0|1|^^^ this is a good standard ^^^<|im_end|>
+|1|1|Always good to have different versions ready to go using nvm<|im_end|>
+|0|1|I'm using yarn 3.1.0<|im_end|>
+|1|2|Try a 'yarn set version 1.22.19', then close and rerun the terminals, maybe even rerun the yarn install command after updating<|im_end|>
+|1|1|It's working on my new clone, hopefully changing to that yarn version will fix it for you<|im_end|>
+|0|1|changing yarn version didn't help<|im_end|>
+|0|2|actually I got some errors with yarn deploy<|im_end|>
+|1|3|You may want to pull a new clone after setting the yarn version.  Could have been some hidden errors during the yarn install<|im_end|>
+|0|2|Hello all 🙂 . . Running into my first little bump. deploying my local contract to goerli my defaultnetwork under hardhat.config.js is set to goerli and my App.jsx is also set to goerli<|im_end|>
+|0|1|you're looking for the "target network" in the app js<|im_end|>
+|0|2|that needs to be goerli too<|im_end|>
+|0|2|try  logging out and reloading but it sounds like you are doing it right<|im_end|>
+|0|1|it shouldn't try to get you to go to locahost if you have target network on goerli<|im_end|>
+|0|1|in app js<|im_end|>
+|0|2|Yeah same issue it looks like - I'll keep digging :)<|im_end|>
+|1|1|Also make sure you're saving the files in VSCode.  It isn't always great about auto saving.  . . You've ran a 'yarn deploy' after updating the targetNetwork and defaultNetwork?<|im_end|>
+|0|1|I believe so, but let me do that again to be certain<|im_end|>
+|0|1|all set, that worked after updating via VSCode<|im_end|>
+|0|2|thanks 🙂<|im_end|>
+|0|2|when I attempt to mint an NFT via Goerli I'm getting: . . Transaction Error. Cannot read properties of undefined (reading 'gasPrice'). . Do I have to define a specific gasprice somewhere?<|im_end|>
+|1|2|Nah, don’t need to do any of that. That error is usually when the contract isn’t deployed correctly. Check the debug tab to see if the contract functions are showing up<|im_end|>
+|0|2|I just tried re-deploying, refreshed the browser and getting the same thing - the debug tab is not showing anything either, just a blank screen.<|im_end|>
+|0|2|apologies if I'm providing wrong information - still figuring it all out lol 😅<|im_end|>
+|1|2|So we know the contract has been deployed<|im_end|>
+|0|1|Very cool<|im_end|>
+|0|1|thanks!<|im_end|>
+|0|2|Working!<|im_end|>
+|1|2|You may be the first to try that!  Why not run the chain and frontend on your laptop, or even gitpod?<|im_end|>
+|0|2|not familiar with gitpod. i use this laptop for many different things and I like to silo as much as possible so I dont have a super slow laptop running all the different toys im playing with<|im_end|>
+|0|1|do you have more info? changing the hardhat config just changes which network. which file changes local test network configuration?<|im_end|>
+|0|2|@Zak, I'm forever stucked in part 2 of the above pics. I don't have a surge account but trying to create one with an email and password has always been some sort of pain. It just won't go past this<|im_end|>
+|0|1|Again in part 1, i already updated the IPFS parameters i generated with my infura account..but App deployment always come out as failed<|im_end|>
+|0|3|Would appreciate your help<|im_end|>
+|1|1|I think Surge works best for the challenges, so let's work on getting you registered there.  It's been awhile, but I remember it just making me type my password twice to create an account. . . Maybe it's trying to reset your password using the "forgot my password" stuff.  What happens after you set Forgot to yes?<|im_end|>
+|0|2|It returns this<|im_end|>
+|0|1|Yeah..i'm only using it for the challanges. can i DM you my details ?<|im_end|>
+|0|2|ill give that a shot<|im_end|>
+|0|1|I got the same error on node v18, rolling back to v16 solved it for me.<|im_end|>
+|0|2|how did you go about that ?<|im_end|>
+|1|1|Depends on your environment, could be as simple as uninstalling node 18 and installing node 16.  Or you can use npm to quickly switch between versions<|im_end|>
+|0|2|follow-up ignorant question, do I need to "stop" yarn in order to start it back up again? Apologies but I'm not familiar enough with yarn to know if that's a thing or not.<|im_end|>
+|0|2|it wouldnt hurt to stop it.  cntrl-c to end whats running in your current terminal and just start it again<|im_end|>
+|1|3|👆 Agreed, ctrl+c or closing the terminal to fully stop it.  Then restart.<|im_end|>
+|1|1|Just refreshed my memory on what your issue was.  So the same thing is happening, correct? You yarn start, hit localhost and find your front end, which in the top right is correctly saying goerli (targetNetwork in app.jsx).  You connect a wallet, probably using Metamask, and this wallet has some goerli in it.  But when you hit mint, the undefined gasPrice error pops up.   . . Is that all correct info?<|im_end|>
+|0|2|Yes that’s all correct<|im_end|>
+|0|1|i think maybe these challenges are using a version of eth-scaffold that predates that change you referenced<|im_end|>
+|0|2|Hello, quick question, I submitted challenge, but got something like this as result. All tests passes locally and application successfully deployed and is working on testnet. Anybody knows what went wrong?<|im_end|>
+|1|1|This should be fixed now, but you will need to resubmit.<|im_end|>
+|0|3|Hey all, I recently finished Patrick Collin's Solidity course, and he suggested a good next step would be to complete the Speed Run Ethereum challenges. Sooooo here I am.<|im_end|>
+|1|2|That pragma does look to be a bit dated.  Is this a new clone?  YourCollectable.sol should be either ^0.8.2 or >=0.8.0 <0.9.0 depending on if you clones the javascript or typescript versions.<|im_end|>
+|0|1|Hi Zak, I cloned from the scaffold-eth repo.<|im_end|>
+|0|2|Yo can anyone tell me how profile data is saved in speedrunethereum website? Is the wallet address saved along with the profile info in a db somewhere? Or is it like stored in ipfs or something like that? Curious cause I want to build something that enables profile creations using wallet as sign in<|im_end|>
+|0|1|yeah we are storing it in a db mostly -- feel free to fork!<|im_end|>
+|0|2|reach out if we can help<|im_end|>
+|0|2|Hey can anyone help me with this error? I get it when I click 'mint nft'<|im_end|>
+|1|2|That's unusual.  Could be the node version maybe?  node should be 16<|im_end|>
+|1|1|Did everything go without error, like the yarn install, yarn chain, yarn start etc?<|im_end|>
+|0|1|What i did wrong? 🤔<|im_end|>
+|0|1|try stopping and starting the front-end again<|im_end|>
+|0|1|Hardhat config goerli too & redeployed contracts?<|im_end|>
+|0|1|Yes in hardhat config too<|im_end|>
+|0|1|Now it's working, frontend reset help!<|im_end|>
+|0|1|Thx<|im_end|>
+|0|1|hey guys. Having trouble starting this<|im_end|>
+|0|1|had no issues with scaffold-eth beginning stuff<|im_end|>
+|1|1|Try doing node v16 instead of 18<|im_end|>
+|0|1|do I have to downgrade my node vers?<|im_end|>
+|0|2|or theres a way to adapt what I have installed?<|im_end|>
+|1|1|You can use npm to change node versions on the fly, it’s super handy<|im_end|>
+|0|2|ah ok cool. how would I do that?<|im_end|>
+|0|1|There's a node version manager, google NVM + mac/windows, whatever you're after<|im_end|>
+|1|1|Ohh yes good call, nvm, not npm!<|im_end|>
+|0|1|sweet. thnx<|im_end|>
+|0|1|I can keep existing npm install, right?<|im_end|>
+|0|2|seeing conflicting info<|im_end|>
+|0|2|or I need to uninstall and use NVM instead for all versions includiung current?<|im_end|>
+|1|2|That was my bad mentioning npm, you should be able to keep that and install nvm for node version management<|im_end|>
+|0|1|ah I meant conflicting info on the interwebs, not you 🙂<|im_end|>
+|0|1|thanks for clarification<|im_end|>
+|1|2|You bet<|im_end|>
+|0|1|now I'm using nvm v 16.14.0, do I yarn install again?<|im_end|>
+|0|1|(also how to uninstall current install?)<|im_end|>
+|0|2|(and sorry for noob qs)<|im_end|>
+|1|1|Yeah, you may need to delete the challenge folder and clone again, but start with a yarn install and see if it works<|im_end|>
+|0|1|cool thnx<|im_end|>
+|0|2|hooray it installed.. but where's my wallet?<|im_end|>
+|1|1|You may want to delete it and clone again, it’s definitely missing the burner wallet<|im_end|>
+|0|1|yeah I did delete and clone again 🤔<|im_end|>
+|1|2|Hrmm<|im_end|>
+|0|1|I see it says localhost.. do I need to use an option to use burner wallet?<|im_end|>
+|1|2|It should automatically generate you a burner<|im_end|>
+|0|2|hmm.. think I'm gonn have to give up for the time being as I'm already uising up a lot of this person's limited internet where I'm staying that I cant keep cloning<|im_end|>
+|1|1|What is your yarn version?  That’s probably not it, but it doesn’t hurt to check<|im_end|>
+|0|1|1.22.19<|im_end|>
+|1|1|That should be good<|im_end|>
+|0|2|not to do with prettier somehow?<|im_end|>
+|1|1|We’ll get rid of that old one<|im_end|>
+|1|1|(Sorry about another clone). Those are not small<|im_end|>
+|0|1|ah okee dokee<|im_end|>
+|0|1|this links to that version<|im_end|>
+|0|2|can I remove media previews here on Telegram? I'm used to Discord<|im_end|>
+|0|2|ah the previews are my own setting? kk<|im_end|>
+|0|1|cool, thanks. Will save that and take it on again tomorrow. Thanks for the help 🙂<|im_end|>
+|1|2|Sure thing!<|im_end|>
+|0|1|I'm probably good to install on latest node version with this then huh?<|im_end|>
+|1|2|I would stick with 16 for now<|im_end|>
+|0|1|yes, of course<|im_end|>
+|1|1|That URL is loading for me atm, did you get it fixed?<|im_end|>
+|0|2|no<|im_end|>
+|1|1|Weird, all good here.  Was able to mint a goerli buffalo<|im_end|>
+|0|1|hi everyone<|im_end|>
+|0|1|I'm on window<|im_end|>
+|0|1|how can I use yarn for try this challenge??<|im_end|>
+|1|2|Hey hey!<|im_end|>
+|1|2|You will need to install git, node, and yarn as prerequisites for the challenge.<|im_end|>
+|0|1|yes, yarn 1.x and node 16.x<|im_end|>
+|0|2|Yeah<|im_end|>
+|0|2|But I install with this command:. Npm i -g yarn<|im_end|>
+|0|1|After that:. When I type yarn start. The cmd said no such a command found<|im_end|>
+|0|1|I am trying to work through the first Simple NFT challenge and receiving error on Checkpoint 2, when I try to mint NFT.<|im_end|>
+|0|1|I have balance in the wallet<|im_end|>
+|1|1|Could also be your node version, are you running v16?<|im_end|>
+|0|2|18.12.1<|im_end|>
+|1|1|Give it a try with v16 installed.  I'm running v16.17.0<|im_end|>
+|0|1|Downgrading to v16<|im_end|>
+|0|1|Helped<|im_end|>
+|0|1|Now minting works<|im_end|>
+|1|1|Excellent!<|im_end|>
+|0|3|Thx for that tip<|im_end|>
+|0|2|Why do you need the private key?<|im_end|>
+|0|1|oh right, i guess you don't need it, you just need to send the goerli eth, and the hardhat deployer handles eveyrhting<|im_end|>
+|0|2|yep<|im_end|>
+|1|1|True, you don’t have to worry about that private key in the challenge.  The mnemonic file does exist in the hardhat folder if you need it.<|im_end|>
+|0|2|was thinking you would be required to make some transactions<|im_end|>
+|1|1|You can just send the deployer address some Goerli eth.  You can grab it’s public address using yarn account<|im_end|>
+|0|2|right right<|im_end|>
+|0|3|Hi! I think I broke something. After changing TARGET_NETWORK_INFO in providersConfig.ts as described in the doc to 'goerli', 'localhost' is still displayed as opposed to 'goerli' as shown in the img on the doc<|im_end|>
+|0|1|hello im getting an error — error:0308010C:digital envelope routines::unsupported, i tried export NODE_OPTIONS=--openssl-legacy-provider but is not working,<|im_end|>
+|0|3|Thanks for the response. I tried what you suggested with no luck. Made sure changes are saved, cleared all browser cache and also tried running incognito with no luck. I'm running on windows, I know sometimes that causes some weird behavior. If nothing else, I could try a linux vm. Can't really think of anything else<|im_end|>
+|1|2|Sounds like you've tried all the right stuff.  I will do a quick test on the typescript version to see if it happens here as well.  Maybe do a run through using the javascript version?  I'm also on Windows here, with node version 16.17.0 and yarn version 1.22.19.  Not sure if that could affect the target network though<|im_end|>
+|1|2|Something silly that I sometimes do is edit the wrong project files 😅, could be something like that too<|im_end|>
+|1|1|Worked for me after updating the targetNetwork in the config file, then the TARGET_NETWORK_INFO in the providersConfig.<|im_end|>
+|1|2|After deploying the contract to goerli, of course.<|im_end|>
+|0|3|Thanks for the reply. I'm sure I was doing something wrong on my end. I scrapped it and went with the js version and everything went smoothly! thanks!<|im_end|>
+|0|2|Hi,. How to deploy the contract to mainnet?. .  -- mainnet --  -- -- 📡.    balance: 0.0061. . "yarn deploy" issuing to me:. deploying "YourCollectible"insufficient funds for intrinsic transaction cost (error={"name":"ProviderError","code":-32000,"_isProviderError":true}, method="sendTransaction", transaction=undefined, code=INSUFFICIENT_FUNDS, version=providers/5.4.4) {"reason":"insufficient funds for intrinsic transaction cost","code":"INSUFFICIENT_FUNDS","error":{"name":"ProviderError","code":-32000,"_isProviderError":true},"method":"sendTransaction"} Error: insufficient funds for intrinsic transaction cost (error={"name":"ProviderError","code":-32000,"_isProviderError":true}, method="sendTransaction", transaction=undefined, code=INSUFFICIENT_FUNDS, version=providers/5.4.4)<|im_end|>
+|1|2|Are you sure you want to?  This challenge is mainly to learn the basics of scaffold-eth.  If you do really want, to it will require more balance than that<|im_end|>
+|0|3|Hey, my Buddy. Yes, I want give minted NFT in to my friend in mainnet<|im_end|>
+|1|2|I'm not sure the exact number, but that will likely cost a decent amount of miannet Eth to deploy.  I don't recommend deploying a simple tutorial like this.  Maybe build it out using your own NFTs, or create some SVG NFTs or some sort of project before deploying.  Then watch for low gas prices, then deploy.<|im_end|>
+|0|2|mint a rainbow roll/nouns dao or something for your friend, lots of projects you could help out like this that are making good progress in our ecosystem.<|im_end|>
+|0|2|now is a good time to buy nft instead of mainnet deploy gas<|im_end|>
+|0|1|yarn surge command taking very long time to execute, taking more than 15 minutes, is it normal?????????? i aborted the execution btw after 15 mins<|im_end|>
+|0|2|should not take that long<|im_end|>
+|1|1|I've never seen it take that long.  30 seconds maybe<|im_end|>
+|0|1|yeah pretty quick<|im_end|>
+|0|1|did you set up your account with an email?<|im_end|>
+|0|2|yes, new account<|im_end|>
+|0|3|I mint some NFTs in testnet Goerli and want to make my own NFT (like one on the screen-shot) in mainnet to transfer it to my friend. How to create some SVG NFTs or suitable project before deploying?. I just starting in this skills, so strange questions.<|im_end|>
+|1|2|That would be a big undertaking for a first project as it looks like a generative or AI design.  I recommend finishing the initial 4 challenges here then tackling the SVG NFT challenge once it unlocks.  There is a telegram group associated with that challenge as well where you can ask questions to other people working on similar things.<|im_end|>
+|0|2|Clear, I gonna through next challenges to open SVG NFT challenge.<|im_end|>
+|0|1|I submitted my 0 Challenge and go ahead to the next. Thanks Zak!<|im_end|>
+|1|3|Excellent!<|im_end|>
+|0|2|Can't get the contract from goerli in /tx/0xce715332e70bc4992a6d05f13d8ef9eb37cfa9d2a4ac5b45fb53371bd7fd54c7.. . /tx/0xce715332e70bc4992a6d05f13d8ef9eb37cfa9d2a4ac5b45fb53371bd7fd54c7 is not a valid address.. . After fixing the issues please resubmit the challenge. If you are still having issues, join the challenge<|im_end|>
+|0|2|For some reason I am getting the error that my goerli contract creation address isnt valid.<|im_end|>
+|1|1|The URL shouldn't be to a transaction on Etherscan, but a contract address.<|im_end|>
+|0|1|Yup gotcha.<|im_end|>
+|0|1|My bad<|im_end|>
+|0|1|THanks for the assist<|im_end|>
+|1|2|You bet!<|im_end|>
+|0|1|i send some goerli ETH to my metamask wallect<|im_end|>
+|0|2|and there is no metamask to connect<|im_end|>
+|1|1|To your deployed surge site?  It should be listed if you have the MetaMask extension installed<|im_end|>
+|0|1|Hello Everyone<|im_end|>
+|1|1|Hey hey!<|im_end|>
+|0|1|I'm Just starting the first challenge on Speed run Ethereum<|im_end|>
+|0|2|when running [yarn surge] I filled in my email and password but ran into an error<|im_end|>
+|1|1|Following up on this.  Usually these surge issues seem to end up working after awhile.  Might be due to internet connection or surge itself acting up.  Were you able  to get it?<|im_end|>
+|0|1|Yes thanks a lot<|im_end|>
+|0|1|Yo Yo wats up everyone. I am a Web2 dev moving into web3. About to start the speedrun ethereum challenges. After finishing speed running ethereum challenges, do you guys think I would be ready for the freelance work on Ethereum? Also you guys have a website called buidlguidl what is it for exactly?<|im_end|>
+|0|1|Ran the error through chatGTP but still no luck getting yarn start to work<|im_end|>
+|1|2|This is a node version issue, grab node version18<|im_end|>
+|0|1|or delete "—openssl-legacy-provider" from the start and build scripts in the react-app package.json.<|im_end|>
+|0|3|You guys are the best thank you. Let me try that right now<|im_end|>
+|0|2|Where are the wallets coming from when you start the react app and when you open an incognito window? I thought we were using our metamask wallet for the challenges until i noticed that wasnt my wallet address displayd on the frontend<|im_end|>
+|0|2|Are these "real" wallets being created on the ethereum network?<|im_end|>
+|0|2|if so, would'nt creating wallets like this bloat the network?<|im_end|>
+|0|1|Im a noob with blockchain by the way. Sorry for all the questions 😅<|im_end|>
+|0|2|okay I see that they are called burner wallets. 🤔<|im_end|>
+|0|1|😳<|im_end|>
+|0|2|Thank you for the vid<|im_end|>
+|0|1|This answered all my questions 🔥🔥🔥. Why is your name Zak on here and Austin on your youtube channel?<|im_end|>
+|1|2|We're different people!  haha<|im_end|>
+|0|1|do you prefer being called Zak? thanks for the help by the way. Back to the challenge i go<|im_end|>
+|1|2|Austin's the real champ, and I... help<|im_end|>
+|0|2|Oh my bad lol I have my telegram minized so i couldnt tell<|im_end|>
+|0|1|Finished Challenge 0. Im off to Challenge 1. Peace out 👊<|im_end|>
+|0|1|Yes<|im_end|>
+|0|1|Yes, I don't have any problem with that<|im_end|>
+|0|1|My problems start here<|im_end|>
+|1|2|Maybe double check Node and Yarn are installed<|im_end|>
+|1|2|But if the yarn install went fine, your yarn is probably good.<|im_end|>
+|0|1|Hey team I can’t seem to submit the challenge - seems to hang after pasting the deployed url and contract url and click submit<|im_end|>
+|0|2|Anyone has suggestions? I’m on arc browser<|im_end|>
+|0|1|Needed to click on the sign challenge prompt that was returned on my other device. Thanks!<|im_end|>
+|0|1|Next challenge…<|im_end|>
+|0|1|can anyone help me with this?<|im_end|>
+|0|1|OK, this was a ssl problem I believe, and the only thing that worked for me was to completely uninstall the NODE that I installed with npm, and re-install the Current Latest Features from the website with MACOS intaller.<|im_end|>
+|0|2|see my previous response above, please.<|im_end|>
+|0|1|Updating node to the latest version also worked well. I had a similar issue<|im_end|>
+|1|2|Yeah, version 18 LTS is probably the best right now<|im_end|>
+|0|1|It didn't work. only the 19.6.0 worked for me today<|im_end|>
+|0|1|When I do yarn start iam getting this<|im_end|>
+|1|1|A lot of things going on here.  Did your yarn install run without error?<|im_end|>
+|0|1|yes when i do yarn install, i did not got errors.<|im_end|>
+|0|2|My node js version version is 18<|im_end|>
+|0|2|I am running the challenge just as it describes to, but when I get to checkpoint 2 the mint nft button fails, with "Transaction Error tx is undefined". Has anyone else run into something similar and gotten past it?<|im_end|>
+|1|2|You could try a yarn deploy --reset.  I usually get that error when I try to mint before deploying<|im_end|>
+|0|2|Doesn’t change anything, unfortunately. And it does appear to be deploying the contract…<|im_end|>
+|0|1|Getting this error in Checkpoint 2<|im_end|>
+|0|2|yarn deploy isn't working as well<|im_end|>
+|1|1|Not sure exactly what the error means here.  I would try closing all terminals, then re running the yarn chain, yarn start, then yarn deploy --reset.  Give it a try after that<|im_end|>
+|0|1|Done ✅<|im_end|>
+|0|2|Hi everyone, I'm having this error on checkpoint 2. I click on Mint button and it shows me this. Does anyone knows how to solve?<|im_end|>
+|0|1|I see it by clicking on it now ?<|im_end|>
+|0|1|What is not working ?<|im_end|>
+|0|1|ooh okay . It's not opening from my machine then.<|im_end|>
+|0|2|yeah I used node v18 so it worked with that<|im_end|>
+|0|2|Oh yea right I ignored that thought it would work for 16 as well lol. Thank you<|im_end|>
+|1|1|At a quick glance, the underscores in the constructor. But those errors should show up when you compile<|im_end|>
+|0|1|When I compile it appears that: ParserError: Expected "{<|im_end|>
+|0|2|but got reserved keyword "override"<|im_end|>
+|1|1|Yeah, probably a vague syntax error.  You'll have to track it down<|im_end|>
+|0|2|Okay<|im_end|>
+|1|1|Are you on the TS version of the challenge by chance?<|im_end|>
+|0|1|yep<|im_end|>
+|0|2|TS ftw!<|im_end|>
+|1|2|Ahh, I think I knew that was an Issue on the TS branch.  I will have to make an issue in Github.<|im_end|>
+|1|1|Let me know if that same issue persists through the next couple challenges.<|im_end|>
+|0|1|so cant finish the challenge if done with ts?<|im_end|>
+|0|1|any workaround?<|im_end|>
+|1|1|No, go ahead and deploy, the funds are there<|im_end|>
+|1|1|It just displayed wrong<|im_end|>
+|0|1|but it wont let me<|im_end|>
+|0|1|on doing yarn deploy<|im_end|>
+|1|2|Whoa<|im_end|>
+|1|1|Can you double check your defaultNetwork in the hardhat config for me?<|im_end|>
+|0|1|goerli;-;<|im_end|>
+|1|1|Well dang<|im_end|>
+|1|2|Hrmm<|im_end|>
+|1|2|Should take around 0.03 or something to deploy.. Something is up<|im_end|>
+|1|1|Switch that defaultNetwork and the targetNetworkInfo(If you've updated that yet) back to localhost and let's try a deploy there just to make sure<|im_end|>
+|0|1|Trying<|im_end|>
+|0|1|works with localhost<|im_end|>
+|1|1|That's a good sign<|im_end|>
+|0|1|is this error due to a network problem？<|im_end|>
+|0|1|I only clicked on the MINT NFT button<|im_end|>
+|0|3|did you fix your issue ?<|im_end|>
+|0|1|hi I have changed the image for the zebra nft to point to an image of an eagle but it still is not showing the eagle image after I save down mint.js and update it<|im_end|>
+|1|2|Looks like your deployer account doesn't have enough sepolia to deploy the contract.  yarn generate will create your deployer account, but you then need to fund it by sending it some sepolia.  Through your metamask or other wallet where you have some sepolia. . yarn chain runs your local hardhat node, as at this point you shouldn't need it running.  yarn start runs your front end, so you will need that up until you create a surge page later.<|im_end|>
+|1|1|Yes, it can accept either.  Right, you don't need your private key since that is generated for you when you yarn generate.  I usually just use the faucet to a wallet I own, then send a small amount to the deploy address.. . You shouldn't need yarn chain running when deploying to a testnet.<|im_end|>
+|1|2|You won't be able to see the deployer (yarn generate) account on the front end.  It's just used to deploy.  Once it's deployed to a testnet, you will need to connect a wallet of your own<|im_end|>
+|1|2|I usually connect a metamask wallet that I know has some sepolia eth to test it<|im_end|>
+|0|1|Okay, I'll create a Sepolia wallet with Metamask and use the faucet. Much thanks!<|im_end|>
+|1|1|No worries!<|im_end|>
+|1|1|So we're recommending Sepolia as the testnet to use<|im_end|>
+|1|1|your_network you will change to the network you deployed to, in your case I believe it's sepolia<|im_end|>
+|1|2|yeah yeah 👆<|im_end|>
+|1|2|The surge page you can set to whatever you want, it's just the hosted site that will point to your deployment<|im_end|>
+|1|1|I like to change a character or two from what surge recommends so I know it hasn't been used before.<|im_end|>
+|0|1|So surge is a NFT hosting domain?<|im_end|>
+|1|1|Not NFT, just website hosting<|im_end|>
+|1|2|It's a super quick way to get your site to the web<|im_end|>
+|1|2|Looks like it's working!  So that is a new deployment, and no NFTs have been minted yet.<|im_end|>
+|1|1|Connect a wallet of your own that has some sepolia, then mint one<|im_end|>
+|0|2|Ah! I see it once I connected Metamask<|im_end|>
+|1|2|Nice!  And if you connect with a different wallet, you wont see that NFT since it is owned by your other address.<|im_end|>
+|1|2|Also check the transfers tab in an incognito window.  That will show you all the NFTs that have been minted or transferred.<|im_end|>
+|0|1|Hi, I'm doing the first challenge (NFT contract), I changed the contract but the 'mint nfts' buttons in the frontend is not working, it says 'tx is undefined' - how do i fix it? Thank you very much!<|im_end|>
+|1|1|Usually that’s when the contract hasn’t been deployed yet<|im_end|>
+|0|2|its deployed, it prints the address too<|im_end|>
+|1|1|You could try closing all the terminals and relaunching them.  Then do a yarn deploy —reset to force it to deploy a new contract.<|im_end|>
+|1|2|Also make sure your yarn chain is running<|im_end|>
+|0|1|having the same issue<|im_end|>
+|1|2|Yeah, those contracts look good.  Looking into it now<|im_end|>
+|1|1|Looks to be working now, Etherscan might have been having issues.  Resubmit the challenges and they should process normally.<|im_end|>
+|0|1|Alright<|im_end|>
+|0|3|Hi 🙋‍♂️, when I try to mint the NFTs giving the address of my burner wallet it gives me an error like this:<|im_end|>
+|0|2|In the github readme, it does not tell us to do like this but in the video of scaffold-eth, he mints it to the address given by writing that address inside the code. Do you know why I get an error like this?<|im_end|>
+|1|1|Did you try a restart, then yarn build again?  Might help clean up some system resources<|im_end|>
+|0|2|yes I did try that<|im_end|>
+|1|2|Not related to the issue, but that is a crazy path!  Did i catch three folders named Desktop in there?<|im_end|>
+|0|1|yes there was a booting issue with the computer and the repair guy installed the new windows like this with the old saved data  :D<|im_end|>
+|1|1|Oh dang, I bet that's a pain.<|im_end|>
+|0|2|yes, it was<|im_end|>
+|0|1|now I deleted the node_modules and reinstalling them with yarn install in case there is a problem with dependencies<|im_end|>
+|1|1|Could check your node version as well.<|im_end|>
+|0|1|its 18.15 lts<|im_end|>
+|1|2|Good deal, that should work<|im_end|>
+|1|2|I wonder if the long path names are actually causing an issue.  You could clone the repo to a shorter path as a test.  Maybe create C:\users\Cem and clone it there<|im_end|>
+|1|1|It's a long shot but Windows does some goofy stuff when the path names get too long<|im_end|>
+|0|2|I also thought about it, and will try that, thank you<|im_end|>
+|0|1|now after installing python I ll "yarn install" again<|im_end|>
+|0|1|Hello~. I’m getting a blank white screen on the domain after using yarn surge. Is there any solution to this?<|im_end|>
+|1|1|Usually clearing cache will fix that.<|im_end|>
+|1|2|Nope, blank here as well.  When you ran yarn build in the project directory, did that complete without error?<|im_end|>
+|0|1|Yea without any errors. Compiled Successfully 😕<|im_end|>
+|0|2|Hmm<|im_end|>
+|1|2|That's unusual.  Did the 'build' folder show up in your react-app folder?  Maybe try running the surge command from react-app and see if it changes anything<|im_end|>
+|1|2|I did see one person had this issue as well and it was a misspelling of goerli in his app.jsx file for the network<|im_end|>
+|0|1|I’ll give a surge command from react-app a try!<|im_end|>
+|0|2|Are you in root folder in terminal?<|im_end|>
+|0|2|I was doing all of this in the root folder in terminal, giving a try at react-app (yarn surge)<|im_end|>
+|1|1|It's loading in the icon, so it's getting something.<|im_end|>
+|1|3|Maybe blow up that build folder and yarn build again<|im_end|>
+|0|1|got it working folks. I made a typo in the network setting under App.jsx. . Guess i typed “yarn” while i was in that file window.. Thank you all for the help. I learned a lot by going through all the possibilities to troubleshoot.<|im_end|>
+|1|1|Glad you got it!<|im_end|>
+|0|1|Hey guys, I completed all the steps and submitted the challenge. But I am trying to understand more beyond following the steps.. How were the arts image saved, and which code file/folder should I look into?<|im_end|>
+|0|2|Hello, I`m tring to do the 1st quest, and need some test eth from sepolia network. But the faucet has ran out atm. Can someone help?<|im_end|>
+|0|1|0x493fb7df602bc70d3fa6345a59d7d96ff652f5cb<|im_end|>
+|0|1|this is my address for test<|im_end|>
+|0|2|Never mind, just got the test eth from the faucet<|im_end|>
+|0|1|when I try "yarn verify --network your_network", I got the feedback Error HH100: Network your_network doesn't exist..<|im_end|>
+|0|1|can anyone help?<|im_end|>
+|0|1|Show us your hardhat config?<|im_end|>
+|0|2|did you replace "your_network" with sepolia?<|im_end|>
+|0|3|pls help<|im_end|>
+|0|2|gm guys/ga guys. a little help pls. I got this error and I have upgraded to 18v for node.js . also tried using wsl since im on windows.. edited my package.json file.. yet i cant pass this stage. not even yarn start will turn on. . what is the solution? am i missing something<|im_end|>
+|1|1|Node and yarn look fine.  Updating node during the challenge usually causes me issues.  Try deleting the challenge folder and clone again<|im_end|>
+|0|1|ok<|im_end|>
+|0|1|ok the yarn chain finally worked<|im_end|>
+|0|2|but now Im facing this error when i tried yarn start<|im_end|>
+|1|2|Node 18 requires the --openssl-legacy-provider part.  Are you sure you're currently using v18?. . Can also try updating yarn to 1.22.19.  Not sure that will change anything, but worth trying.<|im_end|>
+|0|1|yeah im using the 18 version . i managed to fix the error above but dont know how. but now i got new error<|im_end|>
+|0|3|Good morning<|im_end|>
+|1|1|The last errors you've gotten really have a feel of something up with node install or your environment.  I would remove node and yarn and start again.  Grab the Windows node installer for version 18.16.0.  Then use the classic stable installer for yarn 1.22.19 from their site. . . Then clone, checkout, install to a new challenge folder.. . That is where I have the bust luck in my Windows environment.<|im_end|>
+|0|1|i did exactly what you said but got this error<|im_end|>
+|0|1|is it because im using wsl<|im_end|>
+|0|1|i can place the proble<|im_end|>
+|0|1|yarn chain works fine now tho<|im_end|>
+|0|1|but yarn start to get the site is not going fine<|im_end|>
+|0|1|did i miss a step with gitpod<|im_end|>
+|0|1|sorry for all these questions<|im_end|>
+|0|1|pls help if you can<|im_end|>
+|1|2|It's showing your node version as 16<|im_end|>
+|1|2|You may have installed 18, but it's still using 16.<|im_end|>
+|1|2|Another option is to use nvm for Windows to manage your node installations.  Makes it handy to switch between versions.<|im_end|>
+|1|2|Since it's stuck on that error now, I believe it will also work now on v16 if you remove the --openssl-legacy-provider option.<|im_end|>
+|1|1|If you want to do that, the file is react-app->package.json and you would just need to remove --openssl-legacy-provider.  Then the line would be just:<|im_end|>
+|1|2|"start": "react-scripts start",<|im_end|>
+|1|2|But node v18 is a better solution since you'll run into the same thing in the next challenges too.<|im_end|>
+|0|1|ok altho i have updated to 18, it still stuck at 16<|im_end|>
+|0|1|will try fixing it<|im_end|>
+|0|1|thanks<|im_end|>
+|0|2|fixed!! thanks<|im_end|>
+|0|2|hello does anyone got access to the discord server<|im_end|>
+|0|1|the link on github and the speedrun web app seems to be invalid<|im_end|>
+|0|2|am i correct?<|im_end|>
+|1|1|Is that link not working?  Also note that we are primarily on Telegram, so this is the best place to get help<|im_end|>
+|0|1|i see got it<|im_end|>
+|0|1|Hi guys<|im_end|>
+|0|2|Hello, I have a funny question!! Do we need to scaffold-eth install again to start each project?<|im_end|>
+|1|2|Yeah, each project will have it's own local directory where you will need to 'yarn install'<|im_end|>
+|0|2|Because  Size is large,  I asked. Thanks, I just started the challenges.👏🏽<|im_end|>
+|0|2|how open new incognitio win . Every time I do it, the same wallet address is generated.<|im_end|>
+|1|2|Different in each browser but there is generally a way from the top right menu<|im_end|>
+|0|1|It worked in Firefox. But not in Chrome! Maybe I should clear the browser cache. Thank you<|im_end|>
+|1|2|Yeah, that sounds like a good plan<|im_end|>
+|0|2|sorry. as last question. i can't see any collection! error :Cannot read properties of undefined (reading 'gasPrice')<|im_end|>
+|0|1|Hello everyone!. I am getting this error: I do the yarn install and I keep getting the same error when I run the yarn chain.... What can I do?<|im_end|>
+|1|1|Usually yarn install will finish with a line like this<|im_end|>
+|1|1|Not seeing that in yours, did the yarn install go fine?<|im_end|>
+|0|1|I run yarn install and that is what I get<|im_end|>
+|0|2|And command finished like this...<|im_end|>
+|0|1|I've submitted the challenge, but now I want to prove changing the images, I only modified the mint,js file<|im_end|>
+|0|1|I've only modified this<|im_end|>
+|0|2|Where the buffalo was<|im_end|>
+|0|2|I don't know what the problem is, see, I just did everything from scratch, from cloning the repository, and I get the same error:<|im_end|>
+|1|1|Try dropping your yarn to a v1 version, maybe 1.22.19<|im_end|>
+|1|1|Then redo the clone and install<|im_end|>
+|0|2|Yeah, but... Hahah<|im_end|>
+|1|2|You maybe be able to do ‘yarn set version 1.22.19’<|im_end|>
+|1|1|Yeah, haha.  It got confusing once yarn V2 launched<|im_end|>
+|0|2|Yes, you were right<|im_end|>
+|0|2|You're right, the problem is the yarn version... Thank you so much<|im_end|>
+|0|1|Where should I replace this information to get the image I want and not the buffalo?. What are all the files I need to do this in?<|im_end|>
+|0|1|I would like to show my images in the frontend like this...<|im_end|>
+|0|1|Gonna speed run this thang!<|im_end|>
+|0|1|Challenge 0 done! loved it!<|im_end|>
+|0|1|Hello guys<|im_end|>
+|0|2|When I click mint nft on the vite app, nothing happens<|im_end|>
+|1|2|How did the rest of the process go?  yarn install, yarn deploy, and yarn start?. . If those went well, a quick thing to try is to close down your terminals and boot them back up in order<|im_end|>
+|0|1|I got it working now. I set an Authorization header with a browser extension so it was interfering with infura's authentication<|im_end|>
+|0|1|thanks alot for the reply<|im_end|>
+|0|1|Any command to do that : Inspect the Debug Contracts tab to figure out what address is the owner of YourCollectible? ?<|im_end|>
+|0|2|nvm found it ^^<|im_end|>
+|0|2|Yarn build not working for me : . . error Command failed with exit code 9.<|im_end|>
+|0|2|When using node -v 18 : Creating an optimized production build..<|im_end|>
+|0|1|Hi Zak, 👋🏻. . Glad to join this group for building Challenge 0 with you<|im_end|>
+|0|1|Hi all, great to be here! I got to the last bit of the first challenge and ran into this. What should I do?<|im_end|>
+|0|2|Thought I had the network setup right but not sure.<|im_end|>
+|1|2|I think you left in "your_network" instead of replacing it with the actual network name here<|im_end|>
+|0|1|I have also run into this same problem. How can I know my network name?<|im_end|>
+|1|1|What network did you deploy your contract to?<|im_end|>
+|0|1|I dont know, I just did what the website told me to do<|im_end|>
+|1|1|What checkpoint are you on?<|im_end|>
+|0|1|is the network sepolia?<|im_end|>
+|0|1|the last one<|im_end|>
+|1|1|Yeah, you probably used Sepolia then<|im_end|>
+|1|2|From this part<|im_end|>
+|0|1|ok, i typed sepolia and it worked, now what should i submit as the etherscan contract part?<|im_end|>
+|1|2|That changes what network the contract gets deployed to<|im_end|>
+|1|2|Search your contract's address on Sepolia Etherscan.  That will be the URL you want<|im_end|>
+|0|2|The status that is shown says submitted, does that mean i am good to go?<|im_end|>
+|0|1|why is yarn start throwing error<|im_end|>
+|0|1|I am running it in the react-app folder<|im_end|>
+|1|1|yarn start should be run from the root challenge folder<|im_end|>
+|0|2|Hey i am facing this issue while installing yarn<|im_end|>
+|1|1|Could be the network connection, I would probably try deleting the challenge folder and trying again<|im_end|>
+|0|1|i am facing this error now<|im_end|>
+|0|1|Maybe I should try use the se2 version challenges<|im_end|>
+|0|2|did you run "yarn install" before "yarn chain"?<|im_end|>
+|1|1|Also check node and yarn versions maybe.  Node should be v18, yarn 1.22.19 works well<|im_end|>
+|0|1|Yes sir i did<|im_end|>
+|0|1|Yarn 3.6 1. How to check node?<|im_end|>
+|0|3|Npm 9.5.1<|im_end|>
+|1|1|You may have to drop your yarn back to v1 (1.22.19) for these challenges.  We're getting them built in SE2 now, which once launched will work with Yarn v2.. . You can grab node version by just using the command 'node'<|im_end|>
+|0|1|Node is 18.16.1<|im_end|>
+|0|2|I will downgrade yarn<|im_end|>
+|0|2|I have been trying to remove yarn and reinstalk it. I installed it using corepack but i cant find option to remove yarn using corepack. Any help🫠<|im_end|>
+|1|2|I think there is a built in command to set the version, let me check<|im_end|>
+|1|1|yeah. . yarn set version 1.22.19<|im_end|>
+|0|1|Ohh thanks 🥰<|im_end|>
+|0|2|Let me try it<|im_end|>
+|0|2|When i run yarn install its automatically getting updated. So i can skip that right?<|im_end|>
+|1|1|It's probably best to delete the folder and re-create via the clone<|im_end|>
+|0|1|Okk<|im_end|>
+|1|1|Don't want the previous install leaving anything behind to break it<|im_end|>
+|0|1|hello<|im_end|>
+|1|2|Hey hey!<|im_end|>
+|0|1|i have little experience with smartcontracts but i good knowledge in programming with python and search<|im_end|>
+|1|1|Including the pre requirements<|im_end|>
+|0|1|okay , thank you sir<|im_end|>
+|0|1|Thanks for the help 😁<|im_end|>
+|0|1|Made it! xD<|im_end|>
+|0|2|Try this . . "build": "react-scripts --max_old_space_size=4096 build". . . This should work. . let me know<|im_end|>
+|0|1|this one right?<|im_end|>
+|0|1|or this one?<|im_end|>
+|0|1|this one<|im_end|>
+|0|2|I tried both options but the same error.<|im_end|>
+|0|2|Make sure to have a good space of RAM left on your computer. I also suggest to go back and cloned the project and to try to yarn build and see if you are getting the same error<|im_end|>
+|0|1|I tried 6 times.<|im_end|>
+|0|2|Are you all using macOS?<|im_end|>
+|1|1|Correct, in this challenge there isn't any Solidity coding to do.  It's mostly about getting your environment working properly and deploying a contract<|im_end|>
+|1|1|Your yarn version is 1.22.19?  That where I have the best results<|im_end|>
+|0|2|Yeah 1.22.19<|im_end|>
+|1|1|Node version looks good as well.  You could try deleting the project folder and cloning again clean<|im_end|>
+|1|1|Did you also run 'git checkout' to checkout the challenge 0 branch before yarn install?<|im_end|>
+|0|2|Hello i want to ask something, im working on challenge 0, i try to modifying contract name and add some function, is it will be rejected because that<|im_end|>
+|0|2|i think modifying the contract name will reject. adding functions should be fine.<|im_end|>
+|1|2|Yeah, if you’re submitting it the contract name will cause it to fail.<|im_end|>
+|0|2|Hi guys, when I click the mintNFT button, it looks like this, everything is fine, yarn install, yarn deploy, yarn start, Please let me know if you know how to fix it, Thanks!!<|im_end|>
+|0|2|I can take a look but can you post your video online and share the link. YouTube is perfect if you want to host videos.<|im_end|>
+|1|2|Maybe start by closing all your terminal windows and re doing the clone, start, deploy.    If not that, I might just delete the challenge folder and redo the clone and install, in case anything went wrong there<|im_end|>
+|0|2|Thanks Man, I really appreciate you answer!. . I redo it several times already, works the same<|im_end|>
+|1|2|Any more info in the browser console?  Must be something in your environment causing it<|im_end|>
+|1|1|Also check your on node v18, and yarn 1.22.19<|im_end|>
+|0|2|one second please<|im_end|>
+|0|1|node version is v18.17.1. yarn version is 1.22.19<|im_end|>
+|0|2|the console looks like this<|im_end|>
+|1|2|Gave it a try with those same versions and didn't hit this issue.  Is there a VPN or Firewall present?<|im_end|>
+|1|1|Looks like it's not talking to the RPC or Infura correctly<|im_end|>
+|0|2|yes, I am using a VPN, is it a problem?<|im_end|>
+|0|1|fixed the problem by changing the setting of VPN, Thanks Man, I really appreciate it!<|im_end|>
+|0|2|but why is that?<|im_end|>
+|1|1|I'm not sure, maybe that setting was causing certain types of traffic to be blocked<|im_end|>
+|0|1|got it, Thanks for helping me to fix the problem👍👍👍<|im_end|>
+|1|1|You bet 🙌<|im_end|>
+|0|1|Hello!<|im_end|>
+|1|2|Just tested it out, got the same error in Gitpod but no errors in my (Windows)environment.  Is this error still persisting for yall?<|im_end|>
+|1|2|Also, the folks with this error, what node version do you have installed?<|im_end|>
+|0|1|same error<|im_end|>
+|0|1|i use v18.17.1<|im_end|>
+|0|2|Update node and try again<|im_end|>
+|0|2|I think there is a compatability issue with new version of yarn and node<|im_end|>
+|0|1|Try setting yarn to 1.22.19. . Use following command. . yarn set version 1.22.19<|im_end|>
+|0|2|So there is nothing more i have to do right? Just complete challenges and submit my other builds<|im_end|>
+|1|2|Pretty much.  Be active, build things.  Can also help others in telegram chats, repo PRs, etc.<|im_end|>
+|1|1|After joining the BG, someone will reach out as well if you need guidance<|im_end|>
+|0|1|I’m unable to make transactions frrom the instance that I jsut hosted.. Cany ideas why this might be coming?<|im_end|>
+|1|1|Is there any error description?<|im_end|>
+|0|2|this is all that is coming when I try to send<|im_end|>
+|0|2|The gas estimate doesnt come. When I checked the terminal, it jsut showed the error above<|im_end|>
+|0|1|Problem solved. Metamask puts default cahin ID as 31337. Need to change it to 1337 for local host<|im_end|>
+|1|1|Glad you were able to track that one down, those are tricky<|im_end|>
+|1|1|For the first few challenges, SE2 will work fine.<|im_end|>
+|0|1|I can confirm, ch0 an ch1<|im_end|>
+|0|1|Cool. Thanks, will do se2 then<|im_end|>
+|0|1|hi, i just checkout the branch to start the test, but im getting an error when I try to install dependencies:<|im_end|>
+|0|1|I have deployed to sepolia and to vercel but the status for the challenge is rejected<|im_end|>
+|0|1|solved it<|im_end|>
+|0|2|Hi, I had similar issues to this. But I used Scaffold ETH2 and got the Simple NFT Example to work. However I want to upload my own pictures, then MINT the NFT. I think this was possible on Scaffold ETH1.. Can someone help my with getting this to work? . I also tried the example form NFTSchool which uses Scaffold ETH1, but I get more errors doing yarn install and yarn run won't work 😞<|im_end|>
+|0|2|Good morning degens can I use this to airdrop 100 nfts next week<|im_end|>
+|1|1|This should be possible in the SE2 challenge as well, but it might be done differently.  I haven't dug into that yet in SE2 but poke around and see if you can figure it out<|im_end|>
+|0|3|I've tried it all day yesterday. No joy<|im_end|>
+|0|1|It seems like the only way for me to access all the files for the challenge<|im_end|>
+|0|1|Ethereum Bolivia 2023, running this week<|im_end|>
+|1|1|Great to see!  Welcome!  🔥🔥<|im_end|>
+|0|1|We are in a live workshop<|im_end|>
+|0|2|Today we had an intro to Scaffold-eth 2 using challenge 0 and on Friday we’ll dive on the technical details for the hackers<|im_end|>
+|0|1|Attendees will receive this outstanding POAP, done by Dhia! 🏅🙌🏼<|im_end|>
+|0|2|I get the following error at checkpoint 0. Can someone help me?<|im_end|>
+|0|1|Is this correct?<|im_end|>
+|0|2|Yes. This is correct<|im_end|>
+|1|2|The challenges have been migrated to Scaffold-ETH2 from the original Scaffold-ETH.  So yes, it looks different now, but that is correct<|im_end|>
+|1|1|Nice!  And it worked for you after that?<|im_end|>
+|0|1|while setting up for zero challege when i run yarn install i get this error. Any body know whats the issue?<|im_end|>
+|1|1|Looks like it's still working<|im_end|>
+|0|1|so these are not errors? i should let it finish?<|im_end|>
+|1|1|Yeah, let it keep going<|im_end|>
+|0|1|Thanks a lot, i will update once done :)<|im_end|>
+|0|1|thanks it's done and completed challenge 0, submitted<|im_end|>
+|0|3|Hi Zak<|im_end|>
+|0|2|In the Speedrunethereum task 0. The code for the NFT and the frontend are all written and done. What exactly am I gonna be doing as the task?. Just changing the network 😕?. Or do I rewrite the NFT smart contract or sth<|im_end|>
+|1|1|As far as coding goes, yes just changing the network.  This one is more about getting the environment going and learning the steps to start up your chain, front end, and deploy a contract<|im_end|>
+|0|2|Hi I have this error message when I run yarn vercel after the question “In which directory is your code located?”: “The provided path {my path} does not exist. Please choose a different one.” I’m not sure to understand which code and repo are we talking about. Only Front-end? It seemed to be automatically set up and deployed inside nextjs, but then which repo is it?<|im_end|>
+|1|1|Hrmm, weird.  You're running 'yarn vercel' while in the challenge directory?<|im_end|>
+|0|1|Yes shouldn’t I?<|im_end|>
+|1|1|Welcome to the new builders!<|im_end|>
+|0|1|Thanks, let's complete the challenge  🚀<|im_end|>
+|0|1|Thank you Elly!  Very detailed. I will check out<|im_end|>
+|0|1|my "mint nft" button not minting nfts even after deploying and also connected to deployer account<|im_end|>
+|0|2|Do you get any errors in the browser console?<|im_end|>
+|0|1|u want to send me your github link project or something so i can look at it?<|im_end|>
+|0|2|hey guys, it is working now, thank for your help!!!<|im_end|>
+|1|1|Did you verify the contract on Etherscan?<|im_end|>
+|0|2|Submitted. Done. Thanks<|im_end|>
+|0|2|Can someone help me with this? How can I get gas?<|im_end|>
+|1|2|Welcome to the new folks!<|im_end|>
+|0|3|🎁 holiday break speed run let's gooooooo! 🔥<|im_end|>
+|0|2|Hi friends, I am trying to redo my exercise to refresh my memory, but I can’t get the burner wallet address on the to right corner of the localhost page. Should I delete the project directory and reinitiate one?<|im_end|>
+|1|1|If your front end is pointing to a network that isn't hardhat, the burner wallet won't be an option.  Did you start this run through with a fresh clone?<|im_end|>
+|1|1|If not, I do recommend it for this challenge.<|im_end|>
+|0|1|Thank you Zak! I made a fresh clone and it worked<|im_end|>
+|0|2|NM, it appears to be something about where the images live.<|im_end|>
+|0|1|It’s down and I’m having problems getting into the old hosting platform<|im_end|>
+|0|2|Will work on it<|im_end|>
+|0|2|Everything works but the images.. Might pop a note in the ReadMe until they're hosted again... Or not.. This is what dev is really about anyway, right?. . Thank-you for all you do.<|im_end|>
+|0|3|I don't have a mint.js file under hardhat/scripts.. I have generatedAccounts.ts and listAccounts.t.. . In which file are the images/links and how do I navigate there?<|im_end|>
+|0|2|There should at least be a JSON file with the list of assets shouldn't there?. I remember when I did this before there was a JS file in the scaf-eth that listed each of the assets and their descriptions.. Then something changed so they loaded differently, if I remember correctly, and I needed a JSON, which I still have,. . But I'm not finding where in the scaf-eth the assets are kept.. I'm feeling blind right now.. . Also, didn't you used to have more NFT challenges?. Or was that just stuff I did?. (Rolling my eyes at how much I've forgotten).<|im_end|>
+|0|2|packages>nextjs> utils>nftsMetadata.ts. . 🎉🎉🎉. . Found it.<|im_end|>
+|0|2|Hi peepz just started the speedrun, glad to be here<|im_end|>
+|1|2|You can safely ignore those, just look for the completion without errors message at the end<|im_end|>
+|0|2|Ah awesome thanks Zak 😁 but indeed it's throwing an error at the end<|im_end|>
+|1|2|uh oh!  What is that error?  That is the important one<|im_end|>
+|0|1|I suppose I don't need to do anything... just have fun re-acclimating to coding and submit directly to BUIDLGUIDL when I get to the new stuff. . . I sure appreciate this project.. Thank-you.<|im_end|>
+|0|2|Hi everyone happy new year<|im_end|>
+|0|1|well i got it to install but now i cannot run yarn chain<|im_end|>
+|0|1|it throws this one<|im_end|>
+|0|3|What's your OS?<|im_end|>
+|0|1|nternal Error: typescript@patch:typescript@npm%3A^5.1.6#~builtin<compat/typescript>: This package doesn't seem to be present in your lockfile; run "yarn install" to update the lockfile<|im_end|>
+|0|1|i'm on a windows 10<|im_end|>
+|0|1|How did you install yarn?<|im_end|>
+|0|1|yeap it doesn't<|im_end|>
+|0|1|before that i tried npm install<|im_end|>
+|0|1|and also i ve downgraded some dependencies version<|im_end|>
+|0|1|but up to no use<|im_end|>
+|0|1|using phind ai<|im_end|>
+|0|2|it just says that the package is missing and to use yearn install<|im_end|>
+|0|2|I think you can remove it, purge it, and reinstall it. Look up different ways to install.<|im_end|>
+|0|1|I broke it in the middle of this project doing a vercel update, like a fool. Lol.<|im_end|>
+|0|2|what do you mean by this ?<|im_end|>
+|0|1|I'd send you my docs, but they're all Linux specific. Windows gives me fits. I haven't done any Scaff-Eth on Windows ever.<|im_end|>
+|0|2|no probs thanks anyway<|im_end|>
+|0|1|Uh, is it npm rm yarn?. Run the command to remove the package, then google "purge yarn Windows10", make sure you trust the source,<|im_end|>
+|0|1|then reinstall.<|im_end|>
+|0|1|hey peepz i have news<|im_end|>
+|0|1|it was related to the yarn version<|im_end|>
+|0|1|here's what i did<|im_end|>
+|0|1|yarn set version canary<|im_end|>
+|0|2|but so far so good<|im_end|>
+|0|1|Yeah, I've been using 18.. I'm glad it's working out for you.<|im_end|>
+|0|2|Sorry I didn't think of that last night.. Honestly the yarn struggles are the hardest part.. 90% of dev is getting everything installed and working.. Coding is the easy part.. . Plus there's great resources for Solidity online.<|im_end|>
+|1|2|Ah yeah, this challenge is more about getting you all setup.  All is working?<|im_end|>
